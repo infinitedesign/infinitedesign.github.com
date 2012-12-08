@@ -1,0 +1,40 @@
+// Variable Customizations
+
+// Grays
+// -------------------------
+$black:                 #000;
+$grayDarker:            #222;
+$grayDark:              #333;
+$gray:                  #555;
+$grayLight:             #999;
+$grayLighter:           #eee;
+$white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+$blue:                  #049cdb;
+$blueDark:              #0064cd;
+$green:                 #46a546;
+$red:                   #9d261d;
+$yellow:                #ffc40d;
+$orange:                #f89406;
+$pink:                  #c3325f;
+$purple:                #7a43b6;
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $black;
+$textColor:             $white;
+
+// Hero unit
+// -------------------------
+$heroUnitBackground:              $grayDarker;
+$heroUnitHeadingColor:            inherit;
+$heroUnitLeadColor:               inherit;
+
+// Compass Responsive-Twitter-Bootstrap Awesome-Font Import
+
+@import "compass_twitter_bootstrap_awesome";
+@import "compass_twitter_bootstrap_responsive";
+
