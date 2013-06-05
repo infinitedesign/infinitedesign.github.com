@@ -1,0 +1,429 @@
+@charset "UTF-8";
+/* desktop.css Stylesheet */
+/* mixins */
+/* empty */
+/* dimensions */
+/* empty */
+/* colours */
+/* empty */
+/* fonts */
+/* Museo */
+/*
+@font-face {
+  font-family: 'Museo';
+  src: url("fonts/museo/museo700-regular.eot");
+  src: local("☺"), url("fonts/museo/museo700-regular.woff") format("woff"), url("fonts/museo/museo700-regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo';
+  src: url("fonts/museo/museo500-regular.eot");
+  src: local("☺"), url("fonts/museo/museo500-regular.woff") format("woff"), url("fonts/museo/museo500-regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo';
+  src: url("fonts/museo/museo300-regular.eot");
+  src: local("☺"), url("fonts/museo/museo300-regular.woff") format("woff"), url("fonts/museo/museo300-regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+*/
+/* layout */
+/* line 38, ../../app/styles/desktop-css.scss */
+body {
+  background-image: url("../images/12ead13d.work-in-progress.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+/* line 42, ../../app/styles/desktop-css.scss */
+body > header {
+  height: 2.7em;
+  margin: 0 auto 1em auto;
+}
+
+/* line 45, ../../app/styles/desktop-css.scss */
+body > header h1 {
+  float: left;
+}
+
+/* line 47, ../../app/styles/desktop-css.scss */
+body > header nav {
+  clear: none;
+  margin: 0.3em 0 0 1.2em;
+  padding: 0;
+  float: left;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 54, ../../app/styles/desktop-css.scss */
+body > header nav ul {
+  display: block;
+  width: 100%;
+}
+
+/* line 57, ../../app/styles/desktop-css.scss */
+body > header nav li {
+  float: left;
+  display: block;
+  margin: 0 1em 0 0;
+  padding: 0 1em 0 0;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "Museo", "Trebuchet MS", Trebuchet, Tahoma, Arial, sans-serif;
+  border-right: 1px #666666 solid;
+}
+
+/* line 66, ../../app/styles/desktop-css.scss */
+body > header nav li:hover a {
+  color: #658e15;
+}
+
+/* line 68, ../../app/styles/desktop-css.scss */
+body > header nav li a {
+  width: 100%;
+  display: block;
+}
+
+/* line 71, ../../app/styles/desktop-css.scss */
+body > header nav li.current {
+  font-weight: 300;
+}
+
+/* line 73, ../../app/styles/desktop-css.scss */
+body > header nav li.current a {
+  color: #658e15;
+}
+
+/* line 75, ../../app/styles/desktop-css.scss */
+body > header nav li:last-child {
+  border: none;
+}
+
+/* line 77, ../../app/styles/desktop-css.scss */
+body > header form#search {
+  clear: right;
+  float: right;
+  margin: 0 0 0 4%;
+  width: 31%;
+  margin-left: 1em;
+}
+
+/* line 83, ../../app/styles/desktop-css.scss */
+body > article > * {
+  width: 65%;
+}
+
+/* line 85, ../../app/styles/desktop-css.scss */
+body article aside {
+  clear: right;
+  float: right;
+  margin: 0 0 0 4%;
+  width: 31%;
+}
+
+/* line 90, ../../app/styles/desktop-css.scss */
+body > footer section {
+  float: left;
+  width: 28%;
+}
+
+/* line 93, ../../app/styles/desktop-css.scss */
+body > footer section#about {
+  margin-right: 5%;
+}
+
+/* line 95, ../../app/styles/desktop-css.scss */
+body > footer section#contact {
+  clear: right;
+  float: right;
+  margin: 0 0 0 4%;
+  width: 31%;
+}
+
+/* line 100, ../../app/styles/desktop-css.scss */
+body > footer section#contact span.email, body > footer section#contact span.tel, body > footer section#contact span.adr {
+  display: block;
+}
+
+/* line 103, ../../app/styles/desktop-css.scss */
+article.detail header {
+  width: 100%;
+  height: 12.5em;
+  border: none;
+}
+
+/* line 107, ../../app/styles/desktop-css.scss */
+article.detail header h2 {
+  margin: 3.35em 0 0 0;
+  display: inline-block;
+  background-color: #97c02f;
+  padding: 0.25em 0.5em;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* content elements */
+/* line 116, ../../app/styles/desktop-css.scss */
+article.feature {
+  margin-bottom: 1.5em;
+}
+
+/* line 118, ../../app/styles/desktop-css.scss */
+article.feature h2 {
+  margin: 0.7em 0 0.2em 0;
+  text-align: center;
+}
+
+/* line 121, ../../app/styles/desktop-css.scss */
+article.feature p {
+  margin: 0 2em 1em 2em;
+  text-align: center;
+  font-size: 1.1em;
+  color: #575756;
+}
+
+/* line 126, ../../app/styles/desktop-css.scss */
+article.feature img {
+  background: #f5f5f5;
+}
+
+/* line 129, ../../app/styles/desktop-css.scss */
+article.highlight {
+  width: 32%;
+  display: block;
+  float: left;
+  margin: 0 2% 0 0;
+}
+
+/* line 134, ../../app/styles/desktop-css.scss */
+article.highlight:last-child {
+  margin-right: 0;
+}
+
+/* line 136, ../../app/styles/desktop-css.scss */
+article.highlight img {
+  padding: 4px;
+  background-color: white;
+}
+
+/* line 139, ../../app/styles/desktop-css.scss */
+article.highlight h3 {
+  font-size: 1.2em;
+  padding: 0.3em 0.2em 0.5em 0.3em;
+  margin: 0;
+}
+
+/* line 143, ../../app/styles/desktop-css.scss */
+article.highlight p {
+  padding: 0 0.2em 0 0.3em;
+  margin: 0 0 0.2em 0;
+}
+
+/* line 146, ../../app/styles/desktop-css.scss */
+article.highlight ul li {
+  font-size: .9em;
+}
+
+/* line 149, ../../app/styles/desktop-css.scss */
+article.alert {
+  background: #ebebe2 url("arrow.png") 0.4em 0.3em no-repeat;
+}
+
+/* line 151, ../../app/styles/desktop-css.scss */
+article.alert p {
+  padding-left: 2.2em;
+}
+
+/* line 154, ../../app/styles/desktop-css.scss */
+ul.highlight li h3 {
+  clear: none;
+  padding-top: 0;
+}
+
+/* components */
+/* line 159, ../../app/styles/desktop-css.scss */
+#breadcrumbs {
+  margin: 0 0 1em 0;
+}
+
+/* line 161, ../../app/styles/desktop-css.scss */
+#breadcrumbs p {
+  font-family: "Museo", "Trebuchet MS", Trebuchet, Tahoma, Arial, sans-serif;
+}
+
+/* line 164, ../../app/styles/desktop-css.scss */
+#pagination ul {
+  width: 60%;
+}
+
+/* line 167, ../../app/styles/desktop-css.scss */
+#pagination li.previous {
+  float: left;
+}
+
+/* line 170, ../../app/styles/desktop-css.scss */
+#biography img {
+  background-color: #fff;
+  padding: .4em;
+  margin: 0 0.4em 0.6em 0;
+}
+
+/*not in use
+section#featured {
+  clear: both;
+  float: left;
+  margin: 0;
+  width: $column-main - $column-margin;
+  margin-right: $column-margin;
+}
+
+section#etcetera {
+  width: $column-misc;
+  margin: 0 0 0 $column-main + $column-margin;
+  vertical-align: top;
+}
+*/
+/* design */
+/* line 192, ../../app/styles/desktop-css.scss */
+body > header h1 {
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 2px 3px #999999;
+  -moz-box-shadow: 0px 2px 3px #999999;
+  -webkit-box-shadow: 0px 2px 3px #999999;
+}
+
+/* line 198, ../../app/styles/desktop-css.scss */
+body > header input[type="submit"] {
+  font-family: "Museo", "Trebuchet MS", Trebuchet, Tahoma, Arial, sans-serif;
+}
+
+/* line 201, ../../app/styles/desktop-css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Museo", "Trebuchet MS", Trebuchet, Tahoma, Arial, sans-serif;
+  font-weight: 500;
+}
+
+/* line 205, ../../app/styles/desktop-css.scss */
+ul li {
+  margin: 0 0.5em 0 2em;
+}
+
+/* line 208, ../../app/styles/desktop-css.scss */
+aside {
+  font-size: 90%;
+}
+
+/* line 210, ../../app/styles/desktop-css.scss */
+aside.contents h4 {
+  font-size: .9em;
+  color: #252524;
+  border-bottom: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 215, ../../app/styles/desktop-css.scss */
+aside.contents ul {
+  font-size: .8em;
+  padding: 0;
+  border-bottom: none;
+}
+
+/* line 219, ../../app/styles/desktop-css.scss */
+aside.contents ul li {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.8em;
+  border-bottom: 1px dotted #ababab;
+}
+
+/* line 223, ../../app/styles/desktop-css.scss */
+aside.contents ul li a {
+  width: 100%;
+  display: block;
+}
+
+/* line 226, ../../app/styles/desktop-css.scss */
+aside.contents ul li:hover {
+  background-color: white;
+}
+
+/* line 229, ../../app/styles/desktop-css.scss */
+div.note p {
+  font-size: .9em;
+  padding: 0.6em 1.5em 0.6em 1.2em;
+}
+
+/* line 233, ../../app/styles/desktop-css.scss */
+.noteworthy {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ababab;
+  background: url("../images/f0a7f2cd.search.png") no-repeat 0px 2px;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+
+/* line 240, ../../app/styles/desktop-css.scss */
+.align-left {
+  float: left;
+}
+
+/* line 243, ../../app/styles/desktop-css.scss */
+.align-right {
+  float: right;
+}
+
+/* line 246, ../../app/styles/desktop-css.scss */
+.align-center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 250, ../../app/styles/desktop-css.scss */
+.caption {
+  border: 1px solid #666666;
+  text-align: center;
+  background: #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* line 257, ../../app/styles/desktop-css.scss */
+.clearfix {
+  clear: both;
+  float: none;
+  width: 100%;
+}
+
+/* line 262, ../../app/styles/desktop-css.scss */
+.quarter {
+  width: 25%;
+}
+
+/* line 265, ../../app/styles/desktop-css.scss */
+.third {
+  width: 33.3%;
+}
+
+/* line 268, ../../app/styles/desktop-css.scss */
+.two-thirds {
+  width: 66.7%;
+}
+
+/* line 271, ../../app/styles/desktop-css.scss */
+.half {
+  width: 50%;
+}
+
+/* line 274, ../../app/styles/desktop-css.scss */
+.three-quarters {
+  width: 75%;
+}
+
+/* line 277, ../../app/styles/desktop-css.scss */
+.full {
+  width: 100%;
+}
