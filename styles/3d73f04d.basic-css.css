@@ -1,0 +1,1065 @@
+/* basic.css Stylesheet */
+/* import */
+/* CSS Mini Reset */
+/* line 5, ../../app/styles/basic-css.scss */
+html, body, div, form, fieldset, legend, label, ul, ol, li, h1, h2, h3, h4, h5, h6, blockquote, footer, header, nav {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../../app/styles/basic-css.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* line 13, ../../app/styles/basic-css.scss */
+li {
+  list-style: none;
+}
+
+/* line 16, ../../app/styles/basic-css.scss */
+a, a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 20, ../../app/styles/basic-css.scss */
+th, td {
+  text-align: left;
+  vertical-align: top;
+}
+
+/* line 24, ../../app/styles/basic-css.scss */
+img, fieldset {
+  border: 0;
+  height: auto;
+}
+
+/* line 28, ../../app/styles/basic-css.scss */
+h1, h2, h3, h4, h5, h6, th, td, p, caption {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+/* line 32, ../../app/styles/basic-css.scss */
+footer, header, nav, section {
+  display: block;
+}
+
+/* mixins */
+/* empty */
+/* dimensions */
+/* empty */
+/* colours */
+/* empty */
+/* fonts */
+/* empty */
+/* layout */
+/* line 48, ../../app/styles/basic-css.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 51, ../../app/styles/basic-css.scss */
+body {
+  background: #f5f5f5;
+}
+
+/* line 53, ../../app/styles/basic-css.scss */
+body > header {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 2%;
+  min-width: 220px;
+  max-width: 960px;
+  overflow: hidden;
+  margin: 0 auto 0.5em auto;
+}
+
+/* line 62, ../../app/styles/basic-css.scss */
+body > header h1 {
+  margin: 0;
+  padding: 0;
+  width: 5em;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+  float: left;
+}
+
+/* line 73, ../../app/styles/basic-css.scss */
+body > header h1 a {
+  display: block;
+  padding: .35em;
+  margin: 0px 3px 3px 3px;
+  color: #fff;
+  background: #97c02f;
+}
+
+/* line 79, ../../app/styles/basic-css.scss */
+body > header nav {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 85, ../../app/styles/basic-css.scss */
+body > header nav ul {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0 0 0.3em;
+}
+
+/* line 89, ../../app/styles/basic-css.scss */
+body > header nav li {
+  float: left;
+  line-height: 1.2em;
+  font-family: Helvetica, Arial, sans-serif;
+  display: block;
+  margin: 0 1em 0 0;
+  padding: 0 1em 0 0;
+  font-size: .8em;
+  border-right: 1px #666666 solid;
+}
+
+/* line 98, ../../app/styles/basic-css.scss */
+body > header nav li:hover a {
+  color: #658e15;
+}
+
+/* line 100, ../../app/styles/basic-css.scss */
+body > header nav li a {
+  width: 100%;
+  display: block;
+}
+
+/* line 103, ../../app/styles/basic-css.scss */
+body > header nav li.current {
+  font-weight: 300;
+}
+
+/* line 105, ../../app/styles/basic-css.scss */
+body > header nav li.current a {
+  color: #658e15;
+}
+
+/* line 107, ../../app/styles/basic-css.scss */
+body > header nav li:last-child {
+  border: none;
+}
+
+/* line 109, ../../app/styles/basic-css.scss */
+body > header a {
+  color: #2a2a2a;
+}
+
+/* line 111, ../../app/styles/basic-css.scss */
+body > header form#search {
+  padding: 0.6em 0 0 0;
+  clear: both;
+  display: block;
+}
+
+/* line 115, ../../app/styles/basic-css.scss */
+body > header input[type="text"] {
+  width: 65%;
+  margin: 0;
+  padding: 3px 0 2px 20px;
+  float: left;
+  font-size: .8em;
+  border: 1px #999999 solid;
+  background: white url("../images/f0a7f2cd.search.png") no-repeat center left;
+}
+
+/* line 123, ../../app/styles/basic-css.scss */
+body > header input[type="submit"] {
+  color: #666;
+  padding: 0 0 0 0.5em;
+  margin: 2px 0 0 0;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  float: left;
+}
+
+/* line 136, ../../app/styles/basic-css.scss */
+body > header input[type="submit"]:hover {
+  color: #97c02f;
+}
+
+/* line 138, ../../app/styles/basic-css.scss */
+body > article {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 2%;
+  min-width: 220px;
+  max-width: 960px;
+  overflow: hidden;
+}
+
+/* line 146, ../../app/styles/basic-css.scss */
+body > article header {
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+
+/* line 149, ../../app/styles/basic-css.scss */
+body > article code {
+  display: block;
+  padding: 5px 0 5px 5px;
+}
+
+/* line 152, ../../app/styles/basic-css.scss */
+body > footer {
+  clear: both;
+  overflow: hidden;
+  padding: 0 0 20px 0;
+  margin: 1em auto 0 auto;
+  background: #ebebe2 url("../images/4ae321b2.clipping-footer.png") no-repeat right top;
+  border-top: 1px dashed #ccccb4;
+  border-bottom: 4px solid #ccccb4;
+}
+
+/* line 160, ../../app/styles/basic-css.scss */
+body > footer div {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 2%;
+  min-width: 220px;
+  max-width: 960px;
+}
+
+/* line 167, ../../app/styles/basic-css.scss */
+body > footer h3 {
+  margin: 0.8em 0 0 0;
+  padding: 0;
+  color: #676637;
+  margin-bottom: 5px;
+}
+
+/* line 172, ../../app/styles/basic-css.scss */
+body > footer p, body > footer li, body > footer li a {
+  font-size: .9em;
+  color: #575756;
+}
+
+/* line 175, ../../app/styles/basic-css.scss */
+body > footer li {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 178, ../../app/styles/basic-css.scss */
+body > footer p {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+/* line 181, ../../app/styles/basic-css.scss */
+body > footer section#elsewhere ul {
+  overflow: hidden;
+}
+
+/* line 183, ../../app/styles/basic-css.scss */
+body > footer section#elsewhere li {
+  width: 50%;
+  float: left;
+}
+
+/* line 186, ../../app/styles/basic-css.scss */
+body > footer section#elsewhere li {
+  width: 100%;
+  float: none;
+}
+
+/* line 189, ../../app/styles/basic-css.scss */
+body > footer section#elsewhere li a {
+  display: block;
+}
+
+/* line 191, ../../app/styles/basic-css.scss */
+body > footer section#contact span.email, body > footer section#contact span.tel, body > footer section#contact span.adr {
+  display: block;
+}
+
+/* line 194, ../../app/styles/basic-css.scss */
+article.detail header {
+  background-color: none;
+  margin-bottom: 1.5em;
+}
+
+/* content elements */
+/* line 199, ../../app/styles/basic-css.scss */
+a {
+  color: #658e15;
+}
+
+/* line 202, ../../app/styles/basic-css.scss */
+a:hover {
+  color: #53a3b4;
+}
+
+/* line 205, ../../app/styles/basic-css.scss */
+aside {
+  margin: 0.5em 0;
+}
+
+/* line 207, ../../app/styles/basic-css.scss */
+aside.contents h4 {
+  font-size: .9em;
+  color: #252524;
+  border-bottom: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-top: .4em;
+}
+
+/* line 214, ../../app/styles/basic-css.scss */
+aside.contents ul {
+  font-size: .8em;
+}
+
+/* line 216, ../../app/styles/basic-css.scss */
+aside.contents ul li {
+  list-style-type: none;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.8em;
+  border-bottom: 1px dotted #ababab;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 224, ../../app/styles/basic-css.scss */
+aside.contents ul li a {
+  width: 100%;
+  display: block;
+}
+
+/* line 227, ../../app/styles/basic-css.scss */
+aside.contents ul li:hover {
+  background-color: white;
+}
+
+/* line 230, ../../app/styles/basic-css.scss */
+blockquote {
+  overflow: hidden;
+  margin: 0;
+}
+
+/* line 233, ../../app/styles/basic-css.scss */
+blockquote:before {
+  content: "\201C";
+  font-size: 230%;
+  float: left;
+  margin: -0.2em 0 0 0.2em;
+}
+
+/* line 238, ../../app/styles/basic-css.scss */
+blockquote p {
+  padding: 0 1.4em 0 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  margin-bottom: 1em;
+  color: #575756;
+}
+
+/* line 244, ../../app/styles/basic-css.scss */
+blockquote p cite {
+  font-size: 1em;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* line 248, ../../app/styles/basic-css.scss */
+blockquote p cite:before {
+  content: "\2014";
+}
+
+/* line 251, ../../app/styles/basic-css.scss */
+div.note {
+  margin: 0;
+}
+
+/* line 253, ../../app/styles/basic-css.scss */
+div.note p {
+  padding: 0.6em 0.8em 0.6em 0.6em;
+  color: white;
+  background: #97c02f url("../images/corner-green.png") no-repeat right top;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 258, ../../app/styles/basic-css.scss */
+div.note a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* line 262, ../../app/styles/basic-css.scss */
+div.note.blue p {
+  background: #53a3b4 url("../images/b9c19da6.corner-blue.png") no-repeat right top;
+}
+
+/* line 265, ../../app/styles/basic-css.scss */
+div.note.red p {
+  background: #c93213 url("../images/345f697c.corner-red.png") no-repeat right top;
+}
+
+/* line 268, ../../app/styles/basic-css.scss */
+div.note.taupe p {
+  background: #999868 url("../images/corner-taupe.png") no-repeat right top;
+}
+
+/* line 271, ../../app/styles/basic-css.scss */
+code {
+  color: #d5d5d5;
+  font-size: .9em;
+  font-family: "Courier";
+  border: 1px dashed #cccccc;
+  background: white url("../images/clipping.png") no-repeat right bottom;
+}
+
+/* line 278, ../../app/styles/basic-css.scss */
+code .element, code .tag {
+  color: blue;
+}
+
+/* line 281, ../../app/styles/basic-css.scss */
+code .attribute {
+  color: red;
+}
+
+/* line 284, ../../app/styles/basic-css.scss */
+code .text {
+  color: grey;
+}
+
+/* not in use*/
+/* line 288, ../../app/styles/basic-css.scss */
+dl.dialogue dt {
+  margin: 15px 0 0 10%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 292, ../../app/styles/basic-css.scss */
+dl.dialogue dd {
+  width: 85%;
+  margin: 0 0 0 3%;
+}
+
+/* line 295, ../../app/styles/basic-css.scss */
+dl.dialogue .description {
+  font-style: italic;
+}
+
+/* line 298, ../../app/styles/basic-css.scss */
+dl.definition dt, dl.definition dd {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+/* line 302, ../../app/styles/basic-css.scss */
+dl.definition dt {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 305, ../../app/styles/basic-css.scss */
+dl.definition dt:after {
+  content: ":";
+}
+
+/* line 307, ../../app/styles/basic-css.scss */
+dl.definition dd span:before {
+  content: "\201C";
+}
+
+/* line 309, ../../app/styles/basic-css.scss */
+dl.definition dd span:after {
+  content: "\201D\00a0";
+}
+
+/* line 311, ../../app/styles/basic-css.scss */
+dl.definition dd a {
+  font-style: italic;
+}
+
+/* line 314, ../../app/styles/basic-css.scss */
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0.3em 0 0.2em 0;
+}
+
+/* line 319, ../../app/styles/basic-css.scss */
+h3 {
+  font-size: 1.5em;
+  margin: 0 0 0.5em 0;
+}
+
+/* line 322, ../../app/styles/basic-css.scss */
+h3 + h4 {
+  padding-top: .5em;
+}
+
+/* line 325, ../../app/styles/basic-css.scss */
+h4 {
+  font-size: 1.2em;
+  margin: 0 0 0.2em 0;
+  color: #252524;
+}
+
+/* line 330, ../../app/styles/basic-css.scss */
+h5 {
+  font-size: 1.1em;
+  margin: 0 0 0.2em 0;
+}
+
+/* line 334, ../../app/styles/basic-css.scss */
+h6 {
+  font-size: 1em;
+  margin: 0 0 0.2em 0;
+}
+
+/* line 338, ../../app/styles/basic-css.scss */
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  margin: 0 0 1.5em 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+
+/* line 345, ../../app/styles/basic-css.scss */
+ol {
+  margin: 0 0 1.5em 0;
+  line-height: 1.3em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* line 349, ../../app/styles/basic-css.scss */
+ol li {
+  padding: 0 0 0.5em 0;
+  margin: 0 0 0 2em;
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+}
+
+/* line 355, ../../app/styles/basic-css.scss */
+ul {
+  margin: 0 0 1.5em 0;
+  line-height: 1.3em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* line 359, ../../app/styles/basic-css.scss */
+ul li {
+  padding: 0 0 0.5em 0;
+  margin: 0 0.3em 0 1em;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+/* line 365, ../../app/styles/basic-css.scss */
+ul.summary {
+  margin-left: 0;
+}
+
+/* line 367, ../../app/styles/basic-css.scss */
+ul.summary li {
+  padding: 0 0 1em 0;
+  margin: 1em 0 0 0;
+  list-style-type: none;
+  border-bottom: 1px dotted #ababab;
+}
+
+/* line 373, ../../app/styles/basic-css.scss */
+ul.highlight {
+  margin-left: 0;
+}
+
+/* line 375, ../../app/styles/basic-css.scss */
+ul.highlight li {
+  padding: 0 0 1em 0;
+  margin: 1em 0 0 0;
+  list-style-type: none;
+  border-bottom: 1px dotted #ababab;
+}
+
+/* line 380, ../../app/styles/basic-css.scss */
+ul.highlight li h3 {
+  font-size: 1.2em;
+  clear: both;
+  padding-top: .5em;
+}
+
+/* line 384, ../../app/styles/basic-css.scss */
+ul.highlight li img {
+  background-color: #fff;
+  padding: .4em;
+  float: left;
+  margin: 0 1.2em 0 0;
+}
+
+/* line 389, ../../app/styles/basic-css.scss */
+ul.highlight li p {
+  margin: 0 0 0.3em 0;
+}
+
+/* line 392, ../../app/styles/basic-css.scss */
+table {
+  margin: 0 0 1.5em 0;
+  border: 1px solid #ababab;
+  border-collapse: collapse;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  line-height: 1.4em;
+}
+
+/* line 399, ../../app/styles/basic-css.scss */
+table ul {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: 1.4em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 405, ../../app/styles/basic-css.scss */
+table ul li {
+  list-style-type: none;
+  margin: 0;
+}
+
+/* line 408, ../../app/styles/basic-css.scss */
+table p {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+/* line 411, ../../app/styles/basic-css.scss */
+table caption {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  caption-side: bottom;
+  padding: 0.5em 0 0 0;
+}
+
+/* line 417, ../../app/styles/basic-css.scss */
+th, td {
+  padding: 0.5em 0.5em;
+  border: 1px solid #ababab;
+}
+
+/* line 421, ../../app/styles/basic-css.scss */
+tr:nth-child(even) {
+  background-color: white;
+}
+
+/* line 424, ../../app/styles/basic-css.scss */
+thead {
+  background-color: #ebebe2;
+  padding: 0.1em 0.5em;
+}
+
+/* line 427, ../../app/styles/basic-css.scss */
+thead td {
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+/* components */
+/* line 432, ../../app/styles/basic-css.scss */
+article.alert {
+  background: #ebebe2;
+  width: 100%;
+  margin: 0.5em 0 1em 0;
+}
+
+/* line 436, ../../app/styles/basic-css.scss */
+article.alert p {
+  padding: 0.3em 0.6em 0.6em 0.6em;
+  font-size: .9em;
+  margin: 0;
+}
+
+/* line 441, ../../app/styles/basic-css.scss */
+#biography {
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #666666;
+  border-top: 1px solid #666666;
+  margin: 0 0 2px 0;
+}
+
+/* line 448, ../../app/styles/basic-css.scss */
+#biography img {
+  width: 40%;
+  height: auto;
+  max-width: 6em;
+  max-height: 6em;
+  padding: 0 0.5em 0.5em 0;
+  float: left;
+}
+
+/* line 455, ../../app/styles/basic-css.scss */
+#biography p {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+/* line 459, ../../app/styles/basic-css.scss */
+#breadcrumbs {
+  margin: 0 0 0.4em 0;
+  padding: 0;
+  width: 100%;
+  border-top: 1px solid #666666;
+  border-bottom: 2px solid #666666;
+}
+
+/* line 465, ../../app/styles/basic-css.scss */
+#breadcrumbs p {
+  color: #666;
+  margin: 2px 0;
+  padding: 4px 0;
+  font-size: .9em;
+  font-weight: 300;
+  border-bottom: 1px solid #666666;
+}
+
+/* line 472, ../../app/styles/basic-css.scss */
+#breadcrumbs a {
+  font-weight: 500;
+  margin: 0 0.2em 0 0;
+}
+
+/* line 475, ../../app/styles/basic-css.scss */
+#breadcrumbs a:hover {
+  color: #53a3b4;
+}
+
+/* line 478, ../../app/styles/basic-css.scss */
+.btt {
+  margin-top: 1em;
+}
+
+/* line 480, ../../app/styles/basic-css.scss */
+.btt a {
+  width: 100%;
+  display: block;
+}
+
+/* line 483, ../../app/styles/basic-css.scss */
+.btt a:hover {
+  background-color: white;
+}
+
+/*not in use
+#etcetera {margin: 0; padding: 10px 0 0 0}
+
+#featured {
+  .articles {
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0; padding: 0;
+      list-style: none;
+        margin: 10px 0;
+        h3 {margin: 0; padding: 0;}
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+  }
+}
+*/
+/* line 507, ../../app/styles/basic-css.scss */
+#pagination {
+  margin: 0;
+  padding: 0.3em 0px;
+  overflow: hidden;
+  width: 100%;
+  font-weight: 300;
+}
+
+/* line 513, ../../app/styles/basic-css.scss */
+#pagination ul {
+  width: 100%;
+  display: block;
+}
+
+/* line 516, ../../app/styles/basic-css.scss */
+#pagination li {
+  display: block;
+  float: right;
+  margin: 0 0.4em;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 524, ../../app/styles/basic-css.scss */
+#pagination li.current {
+  color: #252524;
+}
+
+/* line 526, ../../app/styles/basic-css.scss */
+#pagination li a {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+/* line 530, ../../app/styles/basic-css.scss */
+#pagination li a, #pagination li a:hover {
+  background: none;
+}
+
+/* line 532, ../../app/styles/basic-css.scss */
+#pagination li.next {
+  margin: 0 0 0 0.7em;
+  background: none;
+}
+
+/* line 535, ../../app/styles/basic-css.scss */
+#pagination li.previous {
+  margin: 0;
+  background: none;
+}
+
+/* line 539, ../../app/styles/basic-css.scss */
+#related {
+  width: 100%;
+}
+
+/* line 541, ../../app/styles/basic-css.scss */
+#related h4 {
+  margin-top: 0;
+  padding: 0.3em 0;
+  border-top: 2px solid #666666;
+  border-bottom: 1px solid #666666;
+  color: #252524;
+}
+
+/* line 547, ../../app/styles/basic-css.scss */
+#related nav ul {
+  margin-bottom: 0;
+}
+
+/* line 549, ../../app/styles/basic-css.scss */
+#related nav ul, #related nav li {
+  width: 100%;
+}
+
+/* line 551, ../../app/styles/basic-css.scss */
+#related nav li {
+  border-top: 1px solid #666666;
+  padding: 0.2em 0;
+  list-style: none;
+  margin: 0;
+}
+
+/* line 556, ../../app/styles/basic-css.scss */
+#related nav li:hover {
+  background-color: white;
+}
+
+/* line 558, ../../app/styles/basic-css.scss */
+#related nav li:first-child {
+  border: none;
+}
+
+/* line 560, ../../app/styles/basic-css.scss */
+#related nav a {
+  width: 100%;
+  display: block;
+}
+
+/* line 564, ../../app/styles/basic-css.scss */
+div#slideshow img {
+  margin: 0;
+}
+
+/* line 566, ../../app/styles/basic-css.scss */
+div#slideshow nav {
+  display: block;
+  width: 100%;
+}
+
+/* line 569, ../../app/styles/basic-css.scss */
+div#slideshow ul {
+  padding: 0;
+  margin: 0 0 0.8em 0;
+  display: block;
+  overflow: hidden;
+  background-color: #ebebe2;
+}
+
+/* line 575, ../../app/styles/basic-css.scss */
+div#slideshow ul li {
+  list-style-type: none;
+  display: block;
+  width: 33.3%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 581, ../../app/styles/basic-css.scss */
+div#slideshow ul li a:hover {
+  cursor: hand;
+}
+
+/* line 583, ../../app/styles/basic-css.scss */
+div#slideshow ul li.previous {
+  float: left;
+}
+
+/* line 585, ../../app/styles/basic-css.scss */
+div#slideshow ul li.current {
+  text-align: center;
+  float: left;
+  font-size: .9em;
+}
+
+/* line 589, ../../app/styles/basic-css.scss */
+div#slideshow ul li.next {
+  text-align: right;
+  float: right;
+}
+
+/* line 593, ../../app/styles/basic-css.scss */
+.align-left {
+  float: left;
+}
+
+/* line 596, ../../app/styles/basic-css.scss */
+.align-right {
+  float: right;
+}
+
+/* line 599, ../../app/styles/basic-css.scss */
+.align-center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 603, ../../app/styles/basic-css.scss */
+.caption {
+  border: 1px solid #666666;
+  text-align: center;
+  background: #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* line 610, ../../app/styles/basic-css.scss */
+.clearfix {
+  clear: both;
+  float: none;
+  width: 100%;
+}
+
+/* line 615, ../../app/styles/basic-css.scss */
+.quarter {
+  width: 25%;
+}
+
+/* line 618, ../../app/styles/basic-css.scss */
+.third {
+  width: 33.3%;
+}
+
+/* line 621, ../../app/styles/basic-css.scss */
+.half {
+  width: 50%;
+}
+
+/* line 624, ../../app/styles/basic-css.scss */
+.two-thirds {
+  width: 66.7%;
+}
+
+/* line 627, ../../app/styles/basic-css.scss */
+.three-quarters {
+  width: 75%;
+}
+
+/* line 630, ../../app/styles/basic-css.scss */
+.full {
+  width: 100%;
+}
+
+/* line 633, ../../app/styles/basic-css.scss */
+.wrap {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 2%;
+  min-width: 220px;
+  max-width: 960px;
+}
+
+/* elements */
+/* line 642, ../../app/styles/basic-css.scss */
+#elsewhere ul li {
+  padding: 0.2em 0;
+  margin: 0;
+}
+
+/* line 646, ../../app/styles/basic-css.scss */
+#elsewhere li a {
+  padding: 0 0 0 2em;
+}
+
+/* line 649, ../../app/styles/basic-css.scss */
+#elsewhere li:hover {
+  color: #333;
+  background-color: white;
+}
+
+/* line 653, ../../app/styles/basic-css.scss */
+.delicious {
+  background-image: url("../images/4341a7f3.delicious.png");
+  background-repeat: no-repeat;
+  background-position: middle;
+}
+
+/* line 658, ../../app/styles/basic-css.scss */
+.tumblr {
+  background-image: url("../images/425334f3.tumblr.png");
+  background-repeat: no-repeat;
+  background-position: middle;
+}
+
+/* line 663, ../../app/styles/basic-css.scss */
+.slideshare {
+  background-image: url("../images/125467b4.slideshare.png");
+  background-repeat: no-repeat;
+  background-position: middle;
+}
+
+/* line 668, ../../app/styles/basic-css.scss */
+.twitter {
+  background-image: url("../images/a678c66d.twitter.png");
+  background-repeat: no-repeat;
+  background-position: middle;
+}
