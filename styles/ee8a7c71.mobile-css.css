@@ -1,0 +1,182 @@
+/* mobile.css Stylesheet */
+/* mixins */
+/* empty */
+/* dimensions */
+/* empty */
+/* colours */
+/* empty */
+/* fonts */
+/* empty */
+/* layout */
+/* line 16, ../../app/styles/mobile-css.scss */
+body > header nav {
+  clear: none;
+  margin: 0.3em 0 0 1.2em;
+  padding: 0;
+  float: left;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 23, ../../app/styles/mobile-css.scss */
+body > header nav ul {
+  display: block;
+  width: 100%;
+}
+
+/* line 26, ../../app/styles/mobile-css.scss */
+body > header nav li {
+  float: left;
+  display: block;
+  margin: 0 1em 0 0;
+  padding: 0 1em 0 0;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "Museo", "Trebuchet MS", Trebuchet, Tahoma, Arial, sans-serif;
+  border-right: 1px #666666 solid;
+}
+
+/* line 35, ../../app/styles/mobile-css.scss */
+body > header nav li:hover a {
+  color: #658e15;
+}
+
+/* line 37, ../../app/styles/mobile-css.scss */
+body > header nav li a {
+  width: 100%;
+  display: block;
+}
+
+/* line 40, ../../app/styles/mobile-css.scss */
+body > header nav li.current {
+  font-weight: 300;
+}
+
+/* line 42, ../../app/styles/mobile-css.scss */
+body > header nav li.current a {
+  color: #658e15;
+}
+
+/* line 44, ../../app/styles/mobile-css.scss */
+body > header nav li:last-child {
+  border: none;
+}
+
+/* line 46, ../../app/styles/mobile-css.scss */
+body > article {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 2%;
+  min-width: 220px;
+  max-width: 960px;
+  overflow: hidden;
+}
+
+/* content elements */
+/* line 56, ../../app/styles/mobile-css.scss */
+article.highlight {
+  margin: 0 0 0 0;
+}
+
+/* line 58, ../../app/styles/mobile-css.scss */
+article.highlight:last-child {
+  margin-right: 0;
+}
+
+/* line 60, ../../app/styles/mobile-css.scss */
+article.highlight img {
+  padding: 0;
+}
+
+/* line 62, ../../app/styles/mobile-css.scss */
+article.highlight h3 {
+  font-size: 1.2em;
+  padding: 0.3em 0.5em 0.3em;
+  margin-bottom: 0;
+}
+
+/* line 66, ../../app/styles/mobile-css.scss */
+article.highlight p {
+  padding: 0 0.2em 0 0.3em;
+}
+
+/* line 69, ../../app/styles/mobile-css.scss */
+ul.highlight li h3 {
+  clear: none;
+  padding-top: 0;
+}
+
+/* line 72, ../../app/styles/mobile-css.scss */
+ul.highlight li img {
+  margin-right: .5em;
+}
+
+/* design */
+/* line 76, ../../app/styles/mobile-css.scss */
+body > header h1 {
+  font-size: 1.2em;
+}
+
+/* line 79, ../../app/styles/mobile-css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Museo", "Trebuchet MS", Trebuchet, Tahoma, Arial, sans-serif;
+  font-weight: 500;
+}
+
+/* line 83, ../../app/styles/mobile-css.scss */
+ul li {
+  margin: 0 0.5em 0 2em;
+}
+
+/* components */
+/* line 87, ../../app/styles/mobile-css.scss */
+#breadcrumbs p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* line 90, ../../app/styles/mobile-css.scss */
+#pagination li {
+  font-size: 1.2em;
+  padding: 0 0.4em;
+  margin: 0 0.2em;
+}
+
+/* line 94, ../../app/styles/mobile-css.scss */
+#pagination li.previous {
+  float: left;
+}
+
+/* line 97, ../../app/styles/mobile-css.scss */
+#biography img {
+  background-color: #fff;
+  padding: .4em;
+  margin: 0 0.4em 0 0;
+}
+
+/* line 102, ../../app/styles/mobile-css.scss */
+.note {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 105, ../../app/styles/mobile-css.scss */
+div#slideshow ul li a {
+  width: 100%;
+  display: block;
+}
+
+/* line 108, ../../app/styles/mobile-css.scss */
+div#slideshow ul li a:hover {
+  cursor: hand;
+  background-color: white;
+}
+
+/* line 111, ../../app/styles/mobile-css.scss */
+div#slideshow ul li.previous {
+  font-size: 1.2em;
+}
+
+/* line 113, ../../app/styles/mobile-css.scss */
+div#slideshow ul li.next {
+  font-size: 1.2em;
+}
