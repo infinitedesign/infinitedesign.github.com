@@ -1,0 +1,2928 @@
+/* basic.css Stylesheet */
+/* import */
+/* resets */
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../../app/styles/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 31, ../../app/styles/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 39, ../../app/styles/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 47, ../../app/styles/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 60, ../../app/styles/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 69, ../../app/styles/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 80, ../../app/styles/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 88, ../../app/styles/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+  outline: none;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 102, ../../app/styles/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 110, ../../app/styles/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 118, ../../app/styles/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 125, ../../app/styles/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 132, ../../app/styles/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 141, ../../app/styles/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 152, ../../app/styles/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 160, ../../app/styles/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 167, ../../app/styles/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 174, ../../app/styles/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 182, ../../app/styles/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 188, ../../app/styles/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 191, ../../app/styles/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 202, ../../app/styles/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 209, ../../app/styles/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 220, ../../app/styles/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 231, ../../app/styles/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 241, ../../app/styles/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 254, ../../app/styles/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 265, ../../app/styles/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 276, ../../app/styles/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, ../../app/styles/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 299, ../../app/styles/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 308, ../../app/styles/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 318, ../../app/styles/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 330, ../../app/styles/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 338, ../../app/styles/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 347, ../../app/styles/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 359, ../../app/styles/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset =================================================== */
+/* line 17, ../../app/styles/320_and_up/_reset.scss */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd,
+q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr,
+th, td, article, aside, figure, footer, header, hgroup, menu, nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* variables */
+/* Variables =================================================== */
+/* mixins */
+/* Mixins =================================================== */
+/* helper classes */
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* Prevent callout */
+/* line 24, ../../app/styles/_helperclasses.scss */
+.nocallout {
+  -webkit-touch-callout: none;
+}
+
+/* line 27, ../../app/styles/_helperclasses.scss */
+.pressed {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+/* line 32, ../../app/styles/_helperclasses.scss */
+textarea[contenteditable] {
+  -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+/* line 38, ../../app/styles/_helperclasses.scss */
+.gifhidden {
+  position: absolute;
+  left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+/* line 46, ../../app/styles/_helperclasses.scss */
+.ir {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em;
+}
+
+/* line 56, ../../app/styles/_helperclasses.scss */
+.ir br {
+  display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 63, ../../app/styles/_helperclasses.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 70, ../../app/styles/_helperclasses.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 128, ../../app/styles/320_and_up/_mixins.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 77, ../../app/styles/_helperclasses.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+/* line 85, ../../app/styles/_helperclasses.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 75, ../../app/styles/320_and_up/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+/* line 78, ../../app/styles/320_and_up/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 88, ../../app/styles/_helperclasses.scss */
+.align-left {
+  float: left;
+}
+
+/* line 91, ../../app/styles/_helperclasses.scss */
+.align-right {
+  float: right;
+}
+
+/* line 94, ../../app/styles/_helperclasses.scss */
+.align-center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 98, ../../app/styles/_helperclasses.scss */
+.caption {
+  border: 1px solid #666;
+  text-align: center;
+  background: #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* line 105, ../../app/styles/_helperclasses.scss */
+.quarter {
+  width: 25%;
+}
+
+/* line 108, ../../app/styles/_helperclasses.scss */
+.third {
+  width: 33.3%;
+}
+
+/* line 111, ../../app/styles/_helperclasses.scss */
+.half {
+  width: 50%;
+}
+
+/* line 114, ../../app/styles/_helperclasses.scss */
+.two-thirds {
+  width: 66.7%;
+}
+
+/* line 117, ../../app/styles/_helperclasses.scss */
+.three-quarters {
+  width: 75%;
+}
+
+/* line 120, ../../app/styles/_helperclasses.scss */
+.full {
+  width: 100%;
+}
+
+/* line 123, ../../app/styles/_helperclasses.scss */
+.wrap {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 2%;
+  min-width: 220px;
+  max-width: 960px;
+}
+
+/* site wide styles (html, body) */
+/* Page =================================================== */
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* line 29, ../../app/styles/320_and_up/_site.scss */
+html {
+  background: whitesmoke;
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #f3f5f6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-y: scroll;
+}
+
+/* line 38, ../../app/styles/320_and_up/_site.scss */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: black;
+}
+
+/* typography */
+/* Typography =================================================== */
+/* line 14, ../../app/styles/320_and_up/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+/* line 22, ../../app/styles/320_and_up/_typography.scss */
+h1 small,
+h2 small {
+  font-weight: normal;
+  color: #bfbfbf;
+}
+
+/* line 27, ../../app/styles/320_and_up/_typography.scss */
+h1,
+.h1 {
+  margin-bottom: 0.75em;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+/* line 33, ../../app/styles/320_and_up/_typography.scss */
+h2,
+.h2 {
+  margin-bottom: 0.75em;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+/* line 39, ../../app/styles/320_and_up/_typography.scss */
+h3,
+.h3 {
+  margin-bottom: 1em;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.3;
+}
+
+/* line 45, ../../app/styles/320_and_up/_typography.scss */
+h4,
+.h4 {
+  margin-bottom: 1.5em;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+
+/* line 51, ../../app/styles/320_and_up/_typography.scss */
+h5,
+.h5 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 1.5em;
+}
+
+/* line 56, ../../app/styles/320_and_up/_typography.scss */
+h6,
+.h6 {
+  margin-bottom: 1.5em;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* line 65, ../../app/styles/320_and_up/_typography.scss */
+.table-title {
+  margin-bottom: 0;
+}
+
+/* line 69, ../../app/styles/320_and_up/_typography.scss */
+.header h1,
+.header h2,
+.header h3 {
+  float: left;
+  margin-right: 24px;
+}
+/* line 72, ../../app/styles/320_and_up/_typography.scss */
+.header h1 a,
+.header h2 a,
+.header h3 a {
+  display: block;
+  position: relative;
+  top: 6px;
+  float: right;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  background-color: #f3f5f6;
+}
+/* line 80, ../../app/styles/320_and_up/_typography.scss */
+.header h1:hover,
+.header h2:hover,
+.header h3:hover {
+  background-color: #f3f5f6;
+}
+
+/* line 84, ../../app/styles/320_and_up/_typography.scss */
+.header .a-rss,
+.header .a-rss:hover {
+  float: left;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background: transparent url(../img/a-rss.png) no-repeat 0 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 98, ../../app/styles/320_and_up/_typography.scss */
+p,
+ol,
+ul,
+dl,
+address {
+  margin-bottom: 1.5em;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+
+/* line 103, ../../app/styles/320_and_up/_typography.scss */
+small {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+/* line 107, ../../app/styles/320_and_up/_typography.scss */
+ul,
+ol {
+  margin: 0 0 1.5em -24px;
+  padding: 0 0 0 24px;
+}
+
+/* line 112, ../../app/styles/320_and_up/_typography.scss */
+li ul,
+li ol {
+  margin: 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* line 118, ../../app/styles/320_and_up/_typography.scss */
+ol li {
+  padding: 0 0 0.5em 0;
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+}
+
+/* line 123, ../../app/styles/320_and_up/_typography.scss */
+ul li {
+  padding: 0 0 0.5em 0;
+  margin: 0 0.3em 0 1em;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+/* line 128, ../../app/styles/320_and_up/_typography.scss */
+ul.summary {
+  margin-left: 0;
+}
+/* line 130, ../../app/styles/320_and_up/_typography.scss */
+ul.summary li {
+  padding: 0 0 1em 0;
+  margin: 1em 0 0 0;
+  list-style-type: none;
+  border-bottom: 1px dotted #ababab;
+}
+/* line 135, ../../app/styles/320_and_up/_typography.scss */
+ul.highlight {
+  margin-left: 0;
+}
+/* line 137, ../../app/styles/320_and_up/_typography.scss */
+ul.highlight li {
+  padding: 0 0 1em 0;
+  margin: 1em 0 0 0;
+  list-style-type: none;
+  border-bottom: 1px dotted #ababab;
+}
+/* line 142, ../../app/styles/320_and_up/_typography.scss */
+ul.highlight li h3 {
+  font-size: 1.2em;
+  clear: both;
+  padding-top: 0.5em;
+}
+/* line 146, ../../app/styles/320_and_up/_typography.scss */
+ul.highlight li img {
+  background-color: #fff;
+  padding: 0.4em;
+  float: left;
+  margin: 0 1.2em 0 0;
+}
+/* line 151, ../../app/styles/320_and_up/_typography.scss */
+ul.highlight li p {
+  margin: 0 0 0.3em 0;
+}
+
+/* line 157, ../../app/styles/320_and_up/_typography.scss */
+blockquote {
+  margin: 0 0 1.5em -24px;
+  padding-left: 24px;
+  border-left: 2px solid #c7ced6;
+  font-family: Cambria, Georgia, Times, "Times New Roman";
+  font-style: normal;
+  overflow: hidden;
+}
+/* line 165, ../../app/styles/320_and_up/_typography.scss */
+blockquote:before {
+  content: "\201C";
+  font-size: 230%;
+  float: left;
+  margin: -0.2em 0 0 0.2em;
+}
+/* line 170, ../../app/styles/320_and_up/_typography.scss */
+blockquote p {
+  padding: 0 1.4em 0 2em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  color: #575756;
+}
+/* line 175, ../../app/styles/320_and_up/_typography.scss */
+blockquote p cite {
+  font-size: 1em;
+  font-style: italic;
+}
+/* line 178, ../../app/styles/320_and_up/_typography.scss */
+blockquote p cite:before {
+  content: "\2014";
+}
+
+/* line 182, ../../app/styles/320_and_up/_typography.scss */
+q {
+  quotes: none;
+}
+
+/* line 186, ../../app/styles/320_and_up/_typography.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 190, ../../app/styles/320_and_up/_typography.scss */
+cite {
+  font-style: normal;
+}
+
+/* line 196, ../../app/styles/320_and_up/_typography.scss */
+dl,
+dd {
+  margin-bottom: 1.5em;
+}
+
+/* line 199, ../../app/styles/320_and_up/_typography.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 203, ../../app/styles/320_and_up/_typography.scss */
+.dl-horizontal dt {
+  float: left;
+  clear: left;
+  width: 20.25%;
+  text-align: right;
+}
+/* line 208, ../../app/styles/320_and_up/_typography.scss */
+.dl-horizontal dd {
+  margin-left: 22.78%;
+}
+
+/* line 214, ../../app/styles/320_and_up/_typography.scss */
+dl.dialogue dt {
+  margin: 15px 0 0 10%;
+  text-transform: uppercase;
+}
+/* line 217, ../../app/styles/320_and_up/_typography.scss */
+dl.dialogue dd {
+  width: 85%;
+  margin: 0 0 0 3%;
+}
+/* line 220, ../../app/styles/320_and_up/_typography.scss */
+dl.dialogue .description {
+  font-style: italic;
+}
+/* line 223, ../../app/styles/320_and_up/_typography.scss */
+dl.definition dt, dl.definition dd {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+/* line 227, ../../app/styles/320_and_up/_typography.scss */
+dl.definition dt {
+  font-style: italic;
+}
+/* line 229, ../../app/styles/320_and_up/_typography.scss */
+dl.definition dt:after {
+  content: ":";
+}
+/* line 233, ../../app/styles/320_and_up/_typography.scss */
+dl.definition dd span:before {
+  content: "\201C";
+}
+/* line 235, ../../app/styles/320_and_up/_typography.scss */
+dl.definition dd span:after {
+  content: "\201D\00a0";
+}
+/* line 237, ../../app/styles/320_and_up/_typography.scss */
+dl.definition dd a {
+  font-style: italic;
+}
+
+/* line 243, ../../app/styles/320_and_up/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted #c7ced6;
+  cursor: help;
+}
+
+/* line 247, ../../app/styles/320_and_up/_typography.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 250, ../../app/styles/320_and_up/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 253, ../../app/styles/320_and_up/_typography.scss */
+ins {
+  background-color: #f3f5f6;
+  color: black;
+  text-decoration: none;
+}
+
+/* line 258, ../../app/styles/320_and_up/_typography.scss */
+mark {
+  background-color: #f3f5f6;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 267, ../../app/styles/320_and_up/_typography.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: Monaco, Courier New, monospace;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+
+/* line 272, ../../app/styles/320_and_up/_typography.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 277, ../../app/styles/320_and_up/_typography.scss */
+code {
+  border: 1px dashed #ccc;
+  background: white url("../images/clipping.png") no-repeat right bottom;
+}
+/* line 280, ../../app/styles/320_and_up/_typography.scss */
+code .element, code .tag {
+  color: blue;
+}
+/* line 282, ../../app/styles/320_and_up/_typography.scss */
+code .attribute {
+  color: red;
+}
+/* line 284, ../../app/styles/320_and_up/_typography.scss */
+code .text {
+  color: grey;
+}
+
+/* line 288, ../../app/styles/320_and_up/_typography.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 0;
+  vertical-align: baselineheight;
+}
+
+/* line 294, ../../app/styles/320_and_up/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 297, ../../app/styles/320_and_up/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* dimensions */
+/* empty */
+/* colours */
+/* Colour =================================================== */
+/* line 16, ../../app/styles/320_and_up/_colour.scss */
+a {
+  text-decoration: none;
+  color: #013568;
+}
+/* line 22, ../../app/styles/320_and_up/_colour.scss */
+a:visited {
+  color: #000203;
+}
+/* line 24, ../../app/styles/320_and_up/_colour.scss */
+a:hover {
+  text-decoration: underline;
+  color: #011b35;
+}
+/* line 27, ../../app/styles/320_and_up/_colour.scss */
+a:focus {
+  outline: thin dotted;
+  color: black;
+}
+/* line 31, ../../app/styles/320_and_up/_colour.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 34, ../../app/styles/320_and_up/_colour.scss */
+h1 > a:visited {
+  color: white;
+}
+
+/* line 38, ../../app/styles/320_and_up/_colour.scss */
+::-moz-selection {
+  background-color: #d6dbe1;
+  color: #2d353e;
+  text-shadow: none;
+}
+
+/* line 43, ../../app/styles/320_and_up/_colour.scss */
+::selection {
+  background-color: #d6dbe1;
+  color: #2d353e;
+  text-shadow: none;
+}
+
+/* line 50, ../../app/styles/320_and_up/_colour.scss */
+.swatch {
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+
+/* line 54, ../../app/styles/320_and_up/_colour.scss */
+.swatch-row {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+/* line 60, ../../app/styles/320_and_up/_colour.scss */
+.swatch-row-one {
+  background-color: black;
+}
+
+/* line 63, ../../app/styles/320_and_up/_colour.scss */
+.swatch-row-two {
+  background-color: white;
+}
+
+/* line 66, ../../app/styles/320_and_up/_colour.scss */
+.swatch-row span {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 74, ../../app/styles/320_and_up/_colour.scss */
+.swatch-base span:nth-child(1) {
+  background-color: rgba(45, 53, 62, 0.9);
+}
+
+/* line 77, ../../app/styles/320_and_up/_colour.scss */
+.swatch-base span:nth-child(2) {
+  background-color: rgba(45, 53, 62, 0.8);
+}
+
+/* line 80, ../../app/styles/320_and_up/_colour.scss */
+.swatch-base span:nth-child(3) {
+  background-color: rgba(45, 53, 62, 0.7);
+}
+
+/* line 83, ../../app/styles/320_and_up/_colour.scss */
+.swatch-base span:nth-child(4) {
+  background-color: rgba(45, 53, 62, 0.6);
+}
+
+/* line 88, ../../app/styles/320_and_up/_colour.scss */
+.swatch-alert span:nth-child(1) {
+  background-color: rgba(252, 248, 227, 0.9);
+}
+
+/* line 91, ../../app/styles/320_and_up/_colour.scss */
+.swatch-alert span:nth-child(2) {
+  background-color: rgba(252, 248, 227, 0.8);
+}
+
+/* line 94, ../../app/styles/320_and_up/_colour.scss */
+.swatch-alert span:nth-child(3) {
+  background-color: rgba(252, 248, 227, 0.7);
+}
+
+/* line 97, ../../app/styles/320_and_up/_colour.scss */
+.swatch-alert span:nth-child(4) {
+  background-color: rgba(252, 248, 227, 0.6);
+}
+
+/* line 102, ../../app/styles/320_and_up/_colour.scss */
+.swatch-error span:nth-child(1) {
+  background-color: rgba(218, 79, 73, 0.9);
+}
+
+/* line 105, ../../app/styles/320_and_up/_colour.scss */
+.swatch-error span:nth-child(2) {
+  background-color: rgba(218, 79, 73, 0.8);
+}
+
+/* line 108, ../../app/styles/320_and_up/_colour.scss */
+.swatch-error span:nth-child(3) {
+  background-color: rgba(218, 79, 73, 0.7);
+}
+
+/* line 111, ../../app/styles/320_and_up/_colour.scss */
+.swatch-error span:nth-child(4) {
+  background-color: rgba(218, 79, 73, 0.6);
+}
+
+/* line 116, ../../app/styles/320_and_up/_colour.scss */
+.swatch-info span:nth-child(1) {
+  background-color: rgba(217, 237, 247, 0.9);
+}
+
+/* line 119, ../../app/styles/320_and_up/_colour.scss */
+.swatch-info span:nth-child(2) {
+  background-color: rgba(217, 237, 247, 0.8);
+}
+
+/* line 122, ../../app/styles/320_and_up/_colour.scss */
+.swatch-info span:nth-child(3) {
+  background-color: rgba(217, 237, 247, 0.7);
+}
+
+/* line 125, ../../app/styles/320_and_up/_colour.scss */
+.swatch-info span:nth-child(4) {
+  background-color: rgba(217, 237, 247, 0.6);
+}
+
+/* line 130, ../../app/styles/320_and_up/_colour.scss */
+.swatch-success span:nth-child(1) {
+  background-color: rgba(91, 183, 91, 0.9);
+}
+
+/* line 133, ../../app/styles/320_and_up/_colour.scss */
+.swatch-success span:nth-child(2) {
+  background-color: rgba(91, 183, 91, 0.8);
+}
+
+/* line 136, ../../app/styles/320_and_up/_colour.scss */
+.swatch-success span:nth-child(3) {
+  background-color: rgba(91, 183, 91, 0.7);
+}
+
+/* line 139, ../../app/styles/320_and_up/_colour.scss */
+.swatch-success span:nth-child(4) {
+  background-color: rgba(91, 183, 91, 0.6);
+}
+
+/* line 144, ../../app/styles/320_and_up/_colour.scss */
+.swatch-warning span:nth-child(1) {
+  background-color: rgba(250, 167, 50, 0.9);
+}
+
+/* line 147, ../../app/styles/320_and_up/_colour.scss */
+.swatch-warning span:nth-child(2) {
+  background-color: rgba(250, 167, 50, 0.8);
+}
+
+/* line 150, ../../app/styles/320_and_up/_colour.scss */
+.swatch-warning span:nth-child(3) {
+  background-color: rgba(250, 167, 50, 0.7);
+}
+
+/* line 153, ../../app/styles/320_and_up/_colour.scss */
+.swatch-warning span:nth-child(4) {
+  background-color: rgba(250, 167, 50, 0.6);
+}
+
+/* texture */
+/* Texture =================================================== */
+/* line 18, ../../app/styles/320_and_up/_texture.scss */
+.alert {
+  margin-bottom: 1.5em;
+  padding: 8px 35px 8px 14px;
+  background-color: #fcf8e3;
+  border: 1px solid #f2e187;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #9c8611;
+}
+/* line 27, ../../app/styles/320_and_up/_texture.scss */
+.alert .alert-heading {
+  color: inherit;
+}
+/* line 29, ../../app/styles/320_and_up/_texture.scss */
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  float: right;
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-weight: bold;
+  line-height: 18px;
+  color: inherit;
+}
+
+/* line 39, ../../app/styles/320_and_up/_texture.scss */
+.alert-success {
+  background-color: #c5e6c5;
+  border-color: #a2d6a2;
+  color: #347834;
+}
+
+/* line 44, ../../app/styles/320_and_up/_texture.scss */
+.alert-warning {
+  background-color: #fee7c7;
+  border-color: #fcd296;
+  color: #c17305;
+}
+
+/* line 49, ../../app/styles/320_and_up/_texture.scss */
+.alert-error {
+  background-color: #f4cac8;
+  border-color: #eba19e;
+  color: #da4f49;
+}
+
+/* line 54, ../../app/styles/320_and_up/_texture.scss */
+.alert-inverse {
+  background-color: #414141;
+  border-color: black;
+  color: white;
+}
+
+/* line 61, ../../app/styles/320_and_up/_texture.scss */
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+/* line 64, ../../app/styles/320_and_up/_texture.scss */
+.alert-block .alert-heading {
+  margin-bottom: 0.1875em;
+  font-size: inherit;
+  font-weight: bold;
+}
+/* line 69, ../../app/styles/320_and_up/_texture.scss */
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+/* line 71, ../../app/styles/320_and_up/_texture.scss */
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+/* line 76, ../../app/styles/320_and_up/_texture.scss */
+.badge {
+  padding: 1px 9px 2px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+  color: gray;
+  background-color: #e6e6e6;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  border-radius: 9px;
+  -webkit-transition: background-color 0.25s 0;
+  -webkit-transition-delay: linear;
+  -moz-transition: background-color 0.25s 0 linear;
+  -o-transition: background-color 0.25s 0 linear;
+  transition: background-color 0.25s 0 linear;
+}
+/* line 85, ../../app/styles/320_and_up/_texture.scss */
+.badge:hover {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 90, ../../app/styles/320_and_up/_texture.scss */
+.badge-error {
+  background-color: #da4f49;
+  color: white;
+}
+/* line 93, ../../app/styles/320_and_up/_texture.scss */
+.badge-error:hover {
+  background-color: #9d2520;
+  color: white;
+}
+
+/* line 97, ../../app/styles/320_and_up/_texture.scss */
+.badge-warning {
+  background-color: #faa732;
+  color: white;
+}
+/* line 100, ../../app/styles/320_and_up/_texture.scss */
+.badge-warning:hover {
+  background-color: #c17305;
+  color: white;
+}
+
+/* line 104, ../../app/styles/320_and_up/_texture.scss */
+.badge-success {
+  background-color: #5bb75b;
+  color: white;
+}
+/* line 107, ../../app/styles/320_and_up/_texture.scss */
+.badge-success:hover {
+  background-color: #347834;
+  color: white;
+}
+
+/* line 111, ../../app/styles/320_and_up/_texture.scss */
+.badge-info {
+  background-color: #d9edf7;
+  color: #247fad;
+}
+/* line 114, ../../app/styles/320_and_up/_texture.scss */
+.badge-info:hover {
+  background-color: #85c5e5;
+  color: #247fad;
+}
+
+/* line 118, ../../app/styles/320_and_up/_texture.scss */
+.badge-inverse {
+  background-color: #414141;
+  color: white;
+}
+/* line 121, ../../app/styles/320_and_up/_texture.scss */
+.badge-inverse:hover {
+  background-color: #0e0e0e;
+  color: white;
+}
+
+/* line 152, ../../app/styles/320_and_up/_texture.scss */
+.well {
+  min-height: 21px;
+  padding: 11px;
+  margin-bottom: 1.5em;
+  background-color: #f3f5f6;
+  border: 1px solid #b8c1cb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 10px #d6dbe1;
+  -moz-box-shadow: inset 0 1px 10px #d6dbe1;
+  box-shadow: inset 0 1px 10px #d6dbe1;
+}
+/* line 160, ../../app/styles/320_and_up/_texture.scss */
+.well p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 163, ../../app/styles/320_and_up/_texture.scss */
+.well-large {
+  padding: 22px;
+}
+
+/* line 166, ../../app/styles/320_and_up/_texture.scss */
+.well-small {
+  padding: 6px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* elements */
+/* Elements =================================================== */
+/* line 14, ../../app/styles/320_and_up/_elements.scss */
+.end-section {
+  margin-bottom: 1.5em;
+}
+
+/* line 18, ../../app/styles/320_and_up/_elements.scss */
+hr {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #c7ced6;
+  border-bottom: 1px solid white;
+}
+
+/* line 29, ../../app/styles/320_and_up/_elements.scss */
+img {
+  max-width: 100%;
+  border-width: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 36, ../../app/styles/320_and_up/_elements.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 41, ../../app/styles/320_and_up/_elements.scss */
+figure {
+  margin-bottom: 1.5em;
+}
+/* line 43, ../../app/styles/320_and_up/_elements.scss */
+figure img {
+  margin-bottom: 0.375em;
+}
+/* line 45, ../../app/styles/320_and_up/_elements.scss */
+figure figcaption {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: gray;
+}
+
+/* line 53, ../../app/styles/320_and_up/_elements.scss */
+.list-bordered {
+  list-style-type: none;
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+/* line 57, ../../app/styles/320_and_up/_elements.scss */
+.list-bordered li {
+  margin-bottom: 0.375em;
+  padding-bottom: 0.375em;
+  border-bottom: 1px dashed #c7ced6;
+}
+/* line 61, ../../app/styles/320_and_up/_elements.scss */
+.list-bordered li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom-width: 0;
+}
+
+/* line 68, ../../app/styles/320_and_up/_elements.scss */
+.delicious {
+  background-image: url("../images/4341a7f3.delicious.png");
+  background-repeat: no-repeat;
+  background-position: middle;
+}
+
+/* line 73, ../../app/styles/320_and_up/_elements.scss */
+.tumblr {
+  background-image: url("../images/425334f3.tumblr.png");
+  background-repeat: no-repeat;
+  background-position: middle;
+}
+
+/* line 78, ../../app/styles/320_and_up/_elements.scss */
+.slideshare {
+  background-image: url("../images/125467b4.slideshare.png");
+  background-repeat: no-repeat;
+  background-position: middle;
+}
+
+/* line 83, ../../app/styles/320_and_up/_elements.scss */
+.twitter {
+  background-image: url("../images/a678c66d.twitter.png");
+  background-repeat: no-repeat;
+  background-position: middle;
+}
+
+/* line 88, ../../app/styles/320_and_up/_elements.scss */
+.github {
+  background-image: url("../images/7e78eb45.github.png");
+  background-repeat: no-repeat;
+  background-position: middle;
+}
+
+/* forms */
+/* Forms =================================================== */
+/* line 12, ../../app/styles/320_and_up/_forms.scss */
+form {
+  margin: 0 0 1.5em 0;
+}
+/* line 14, ../../app/styles/320_and_up/_forms.scss */
+form fieldset {
+  margin-bottom: 1.5em;
+  padding: 0;
+  border-width: 0;
+}
+/* line 19, ../../app/styles/320_and_up/_forms.scss */
+form legend {
+  display: block;
+  width: 100%;
+  margin-bottom: 3em;
+  *margin-left: -7px;
+  padding: 0;
+  color: black;
+  border: 0;
+  border-bottom: 1px solid #8c9bab;
+  white-space: normal;
+}
+/* line 29, ../../app/styles/320_and_up/_forms.scss */
+form legend small {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #bfbfbf;
+}
+/* line 32, ../../app/styles/320_and_up/_forms.scss */
+form p {
+  margin-bottom: 0.75em;
+}
+/* line 34, ../../app/styles/320_and_up/_forms.scss */
+form ul {
+  list-style-type: none;
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+/* line 38, ../../app/styles/320_and_up/_forms.scss */
+form br {
+  display: none;
+}
+
+/* line 46, ../../app/styles/320_and_up/_forms.scss */
+label,
+input,
+button,
+select,
+textarea {
+  font-size: 14px;
+  font-size: 1.4rem;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 54, ../../app/styles/320_and_up/_forms.scss */
+input,
+button,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 58, ../../app/styles/320_and_up/_forms.scss */
+label {
+  display: block;
+  margin-bottom: 0.1875em;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+/* line 66, ../../app/styles/320_and_up/_forms.scss */
+label input,
+label textarea,
+label select {
+  display: block;
+}
+
+/* line 71, ../../app/styles/320_and_up/_forms.scss */
+input,
+textarea,
+select {
+  display: inline-block;
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 0.375em;
+  background-color: white;
+  border: 1px solid #8c9bab;
+  color: black;
+}
+/* line 79, ../../app/styles/320_and_up/_forms.scss */
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: #586879;
+}
+
+/* line 82, ../../app/styles/320_and_up/_forms.scss */
+.input-mini {
+  width: 60px;
+}
+
+/* line 85, ../../app/styles/320_and_up/_forms.scss */
+.input-small {
+  width: 90px;
+}
+
+/* line 90, ../../app/styles/320_and_up/_forms.scss */
+input[type="image"],
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 3px 0;
+  *margin-top: 0;
+  line-height: normal;
+  cursor: pointer;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0 \9;
+}
+
+/* line 102, ../../app/styles/320_and_up/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+
+/* line 108, ../../app/styles/320_and_up/_forms.scss */
+input[type="image"] {
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 112, ../../app/styles/320_and_up/_forms.scss */
+input[type="file"] {
+  width: auto;
+  padding: initial;
+  line-height: initial;
+  border: initial;
+  background-color: transparent;
+  background-color: initial;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 123, ../../app/styles/320_and_up/_forms.scss */
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 130, ../../app/styles/320_and_up/_forms.scss */
+select,
+input[type="file"] {
+  height: 28px;
+  *margin-top: 4px;
+  line-height: 28px;
+}
+
+/* line 135, ../../app/styles/320_and_up/_forms.scss */
+select {
+  width: auto;
+  background-color: white;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+/* line 141, ../../app/styles/320_and_up/_forms.scss */
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+/* line 144, ../../app/styles/320_and_up/_forms.scss */
+textarea {
+  resize: vertical;
+  overflow: auto;
+  height: auto;
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 150, ../../app/styles/320_and_up/_forms.scss */
+input[type="hidden"] {
+  display: none;
+}
+
+/* line 154, ../../app/styles/320_and_up/_forms.scss */
+.radio,
+.checkbox {
+  padding-left: 18px;
+  font-weight: normal;
+}
+
+/* line 159, ../../app/styles/320_and_up/_forms.scss */
+.radio input[type="radio"],
+.checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: -18px;
+}
+
+/* line 164, ../../app/styles/320_and_up/_forms.scss */
+.radio.inline,
+.checkbox.inline {
+  display: inline-block;
+  padding-top: 5px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* line 171, ../../app/styles/320_and_up/_forms.scss */
+.radio.inline + .radio.inline,
+.checkbox.inline + .checkbox.inline {
+  margin-left: 10px;
+}
+
+/* line 181, ../../app/styles/320_and_up/_forms.scss */
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* line 188, ../../app/styles/320_and_up/_forms.scss */
+input:focus,
+textarea:focus {
+  border-color: #2d353e, 40%;
+  outline: 0;
+  outline: thin dotted \9;
+}
+
+/* line 196, ../../app/styles/320_and_up/_forms.scss */
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+select:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 199, ../../app/styles/320_and_up/_forms.scss */
+::-webkit-input-placeholder {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+/* line 202, ../../app/styles/320_and_up/_forms.scss */
+input:-moz-placeholder {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+/* line 208, ../../app/styles/320_and_up/_forms.scss */
+.help-block,
+.help-inline {
+  color: gray;
+}
+
+/* line 211, ../../app/styles/320_and_up/_forms.scss */
+.help-block {
+  display: block;
+  margin-bottom: 0.75em;
+}
+
+/* line 215, ../../app/styles/320_and_up/_forms.scss */
+.help-inline {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+/* line 224, ../../app/styles/320_and_up/_forms.scss */
+.form-inline input,
+.form-inline textarea,
+.form-inline select {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* line 228, ../../app/styles/320_and_up/_forms.scss */
+.form-inline label {
+  display: inline-block;
+}
+
+/* line 233, ../../app/styles/320_and_up/_forms.scss */
+.form-inline .radio,
+.form-inline .checkbox,
+.form-inline .radio {
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* line 239, ../../app/styles/320_and_up/_forms.scss */
+.form-inline .radio input[type="radio"],
+.form-inline .checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: 0;
+  margin-right: 3px;
+}
+
+/* line 248, ../../app/styles/320_and_up/_forms.scss */
+.form-search input,
+.form-search textarea,
+.form-search select {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* line 252, ../../app/styles/320_and_up/_forms.scss */
+.form-search .search-query {
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-bottom: 0;
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  -ms-border-radius: 14;
+  -o-border-radius: 14;
+  border-radius: 14;
+}
+
+/* line 258, ../../app/styles/320_and_up/_forms.scss */
+.form-search label {
+  display: inline-block;
+}
+
+/* line 263, ../../app/styles/320_and_up/_forms.scss */
+.form-search .radio,
+.form-search .checkbox,
+.form-inline .radio {
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* line 269, ../../app/styles/320_and_up/_forms.scss */
+.form-search .radio input[type="radio"],
+.form-search .checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: 0;
+  margin-right: 3px;
+}
+
+/* buttons */
+/* Buttons =================================================== */
+/* line 12, ../../app/styles/320_and_up/_buttons.scss */
+.btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  padding: 6px 11px 6px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  color: #404040;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #e6e6e6;
+  background-color: #d9d9d9;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d9d9d9));
+  background-image: -webkit-linear-gradient(#ffffff, #d9d9d9);
+  background-image: -moz-linear-gradient(#ffffff, #d9d9d9);
+  background-image: -o-linear-gradient(#ffffff, #d9d9d9);
+  background-image: linear-gradient(#ffffff, #d9d9d9);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  *margin-left: .3em;
+}
+/* line 35, ../../app/styles/320_and_up/_buttons.scss */
+.btn:visited, .btn:hover {
+  color: #404040;
+  text-decoration: none;
+}
+
+/* line 39, ../../app/styles/320_and_up/_buttons.scss */
+input[type="submit"].btn:hover {
+  border-color: #cccccc;
+}
+
+/* line 42, ../../app/styles/320_and_up/_buttons.scss */
+.btn:first-child {
+  *margin-left: 0;
+}
+
+/* line 47, ../../app/styles/320_and_up/_buttons.scss */
+.btn-disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* line 51, ../../app/styles/320_and_up/_buttons.scss */
+.btn-error {
+  background-color: #c72f29;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2d353e), color-stop(100%, #c72f29));
+  background-image: -webkit-linear-gradient(#2d353e, #c72f29);
+  background-image: -moz-linear-gradient(#2d353e, #c72f29);
+  background-image: -o-linear-gradient(#2d353e, #c72f29);
+  background-image: linear-gradient(#2d353e, #c72f29);
+  background-repeat: repeat-x;
+  border-color: #b22a24;
+  border-bottom-color: #9d2520;
+  color: white;
+}
+/* line 57, ../../app/styles/320_and_up/_buttons.scss */
+.btn-error:visited, .btn-error:hover {
+  color: white;
+}
+
+/* line 62, ../../app/styles/320_and_up/_buttons.scss */
+.btn-info {
+  background-color: #afd9ee;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d9edf7), color-stop(100%, #afd9ee));
+  background-image: -webkit-linear-gradient(#d9edf7, #afd9ee);
+  background-image: -moz-linear-gradient(#d9edf7, #afd9ee);
+  background-image: -o-linear-gradient(#d9edf7, #afd9ee);
+  background-image: linear-gradient(#d9edf7, #afd9ee);
+  background-repeat: repeat-x;
+  border-color: #9acfea;
+  border-bottom-color: #85c5e5;
+  color: #247fad;
+}
+/* line 68, ../../app/styles/320_and_up/_buttons.scss */
+.btn-info:visited, .btn-info:hover {
+  color: #247fad;
+}
+
+/* line 73, ../../app/styles/320_and_up/_buttons.scss */
+.btn-inverse {
+  background-color: #272727;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #414141), color-stop(100%, #272727));
+  background-image: -webkit-linear-gradient(#414141, #272727);
+  background-image: -moz-linear-gradient(#414141, #272727);
+  background-image: -o-linear-gradient(#414141, #272727);
+  background-image: linear-gradient(#414141, #272727);
+  background-repeat: repeat-x;
+  border-color: #1b1b1b;
+  border-bottom-color: #0e0e0e;
+  color: white;
+}
+/* line 79, ../../app/styles/320_and_up/_buttons.scss */
+.btn-inverse:visited, .btn-inverse:hover {
+  color: white;
+}
+
+/* line 84, ../../app/styles/320_and_up/_buttons.scss */
+.btn-primary {
+  background-color: #181c20;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2d353e), color-stop(100%, #181c20));
+  background-image: -webkit-linear-gradient(#2d353e, #181c20);
+  background-image: -moz-linear-gradient(#2d353e, #181c20);
+  background-image: -o-linear-gradient(#2d353e, #181c20);
+  background-image: linear-gradient(#2d353e, #181c20);
+  background-repeat: repeat-x;
+  border-color: #0d0f12;
+  border-bottom-color: #020203;
+  color: white;
+}
+/* line 90, ../../app/styles/320_and_up/_buttons.scss */
+.btn-primary:visited, .btn-primary:hover {
+  color: white;
+}
+
+/* line 95, ../../app/styles/320_and_up/_buttons.scss */
+.btn-success {
+  background-color: #449b44;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5bb75b), color-stop(100%, #449b44));
+  background-image: -webkit-linear-gradient(#5bb75b, #449b44);
+  background-image: -moz-linear-gradient(#5bb75b, #449b44);
+  background-image: -o-linear-gradient(#5bb75b, #449b44);
+  background-image: linear-gradient(#5bb75b, #449b44);
+  background-repeat: repeat-x;
+  border-color: #3c893c;
+  border-bottom-color: #347834;
+}
+
+/* line 102, ../../app/styles/320_and_up/_buttons.scss */
+.btn-warning {
+  background-color: #f39106;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faa732), color-stop(100%, #f39106));
+  background-image: -webkit-linear-gradient(#faa732, #f39106);
+  background-image: -moz-linear-gradient(#faa732, #f39106);
+  background-image: -o-linear-gradient(#faa732, #f39106);
+  background-image: linear-gradient(#faa732, #f39106);
+  background-repeat: repeat-x;
+  border-color: #da8205;
+  border-bottom-color: #c17305;
+}
+
+/* line 109, ../../app/styles/320_and_up/_buttons.scss */
+.btn-extlarge {
+  padding: 11px 22px;
+  font-size: 21px;
+  font-size: 2.1rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 114, ../../app/styles/320_and_up/_buttons.scss */
+.btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+
+/* line 119, ../../app/styles/320_and_up/_buttons.scss */
+.btn-large {
+  padding: 11px 22px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: normal;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 125, ../../app/styles/320_and_up/_buttons.scss */
+.btn-small {
+  padding: 6px 10px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  line-height: 16px;
+}
+
+/* line 130, ../../app/styles/320_and_up/_buttons.scss */
+.btn-mini {
+  padding: 3px 5px;
+  font-size: 11px;
+  font-size: 1.1rem;
+  line-height: 14px;
+}
+
+/* line 135, ../../app/styles/320_and_up/_buttons.scss */
+.btn-group {
+  position: relative;
+  *zoom: 1;
+  *margin-left: .3em;
+  margin-bottom: 1.5em;
+}
+/* line 140, ../../app/styles/320_and_up/_buttons.scss */
+.btn-group .btn {
+  position: relative;
+  float: left;
+  margin-left: -1px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 145, ../../app/styles/320_and_up/_buttons.scss */
+.btn-group .btn:first-child {
+  margin-left: 0;
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+/* line 148, ../../app/styles/320_and_up/_buttons.scss */
+.btn-group .btn:last-child {
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+/* line 151, ../../app/styles/320_and_up/_buttons.scss */
+.btn-group .btn.large:first-child {
+  margin-left: 0;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/* line 154, ../../app/styles/320_and_up/_buttons.scss */
+.btn-group .btn.large:last-child {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 157, ../../app/styles/320_and_up/_buttons.scss */
+.btn-toolbar {
+  clear: both;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+/* line 161, ../../app/styles/320_and_up/_buttons.scss */
+.btn-toolbar .btn-group {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* tables */
+/* Tables =================================================== */
+/* line 12, ../../app/styles/320_and_up/_tables.scss */
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+/* line 20, ../../app/styles/320_and_up/_tables.scss */
+table th,
+table td {
+  padding: 8px;
+  padding: 0.8rem;
+  vertical-align: top;
+  border-top: 1px solid #8c9bab;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  text-align: left;
+}
+/* line 28, ../../app/styles/320_and_up/_tables.scss */
+table th {
+  font-weight: bold;
+}
+/* line 30, ../../app/styles/320_and_up/_tables.scss */
+table thead th {
+  vertical-align: bottom;
+}
+/* line 35, ../../app/styles/320_and_up/_tables.scss */
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+/* line 37, ../../app/styles/320_and_up/_tables.scss */
+table tbody + tbody {
+  border-top: 2px solid #8c9bab;
+}
+/* line 40, ../../app/styles/320_and_up/_tables.scss */
+table tbody tr td,
+table tbody tr th {
+  -webkit-transition: background-color 0.25s 0;
+  -webkit-transition-delay: linear;
+  -moz-transition: background-color 0.25s 0 linear;
+  -o-transition: background-color 0.25s 0 linear;
+  transition: background-color 0.25s 0 linear;
+}
+/* line 43, ../../app/styles/320_and_up/_tables.scss */
+table tbody tr:hover td,
+table tbody tr:hover th {
+  background-color: #a9b4c1;
+}
+/* line 46, ../../app/styles/320_and_up/_tables.scss */
+table ul {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: 1.4em;
+}
+/* line 51, ../../app/styles/320_and_up/_tables.scss */
+table ul li {
+  list-style-type: none;
+  margin: 0;
+}
+/* line 54, ../../app/styles/320_and_up/_tables.scss */
+table p {
+  margin: 0;
+}
+/* line 56, ../../app/styles/320_and_up/_tables.scss */
+table caption {
+  text-align: left;
+  caption-side: bottom;
+  padding: 0.5em 0 0 0;
+}
+
+/* line 66, ../../app/styles/320_and_up/_tables.scss */
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px;
+}
+
+/* line 71, ../../app/styles/320_and_up/_tables.scss */
+.table-bordered {
+  border: 1px solid #8c9bab;
+  border-left: 0;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+}
+/* line 77, ../../app/styles/320_and_up/_tables.scss */
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #8c9bab;
+}
+/* line 81, ../../app/styles/320_and_up/_tables.scss */
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+
+/* line 88, ../../app/styles/320_and_up/_tables.scss */
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #c7ced6;
+}
+
+/* page level layout */
+/* print */
+@media print {
+  /* Print =================================================== */
+  /* line 14, ../../app/styles/320_and_up/_print.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 27, ../../app/styles/320_and_up/_print.scss */
+  h2, h3 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
+
+  /* line 32, ../../app/styles/320_and_up/_print.scss */
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 36, ../../app/styles/320_and_up/_print.scss */
+  pre, blockquote {
+    border: 1px solid gray;
+    page-break-inside: avoid;
+  }
+
+  /* line 40, ../../app/styles/320_and_up/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 45, ../../app/styles/320_and_up/_print.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 48, ../../app/styles/320_and_up/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 52, ../../app/styles/320_and_up/_print.scss */
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 57, ../../app/styles/320_and_up/_print.scss */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* line 61, ../../app/styles/320_and_up/_print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 64, ../../app/styles/320_and_up/_print.scss */
+  tr {
+    page-break-inside: avoid;
+  }
+}
+/* fonts */
+/* empty */
+/* layout */
+/* line 71, ../../app/styles/basic.scss */
+body > header {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 2%;
+  min-width: 220px;
+  max-width: 960px;
+  overflow: hidden;
+  margin: 0 auto 0.5em auto;
+}
+/* line 80, ../../app/styles/basic.scss */
+body > header h1 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  float: left;
+}
+/* line 91, ../../app/styles/basic.scss */
+body > header h1 a {
+  display: block;
+  padding: 0.35em;
+  margin: 0px 3px 3px 3px;
+  color: #fff;
+  background: #000000;
+}
+/* line 97, ../../app/styles/basic.scss */
+body > header nav {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+/* line 104, ../../app/styles/basic.scss */
+body > header nav div.divider {
+  position: absolute;
+  left: 50%;
+  padding-top: 0.2em;
+}
+/* line 109, ../../app/styles/basic.scss */
+body > header nav ul {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0 0 0;
+  padding-left: 0;
+}
+/* line 114, ../../app/styles/basic.scss */
+body > header nav li {
+  float: left;
+  line-height: 1.2em;
+  font-family: Helvetica, Arial, sans-serif;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 2em 0 2em;
+  font-size: 1.1em;
+}
+/* line 123, ../../app/styles/basic.scss */
+body > header nav li:hover a {
+  color: #658e15;
+}
+/* line 125, ../../app/styles/basic.scss */
+body > header nav li a {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+/* line 129, ../../app/styles/basic.scss */
+body > header nav li.current {
+  font-weight: 300;
+}
+/* line 131, ../../app/styles/basic.scss */
+body > header nav li.current a {
+  color: #658e15;
+}
+/* line 133, ../../app/styles/basic.scss */
+body > header nav li:last-child {
+  float: right;
+}
+/* line 135, ../../app/styles/basic.scss */
+body > header a {
+  color: #2a2a2a;
+}
+/* line 137, ../../app/styles/basic.scss */
+body > header form#search {
+  padding: 0.6em 0 0 0;
+  clear: both;
+  display: block;
+}
+/* line 142, ../../app/styles/basic.scss */
+body > header input[type="text"] {
+  width: 65%;
+  margin: 0;
+  padding: 3px 0 2px 20px;
+  float: left;
+  font-size: 0.8em;
+  border: 1px #999 solid;
+  background: white url("../images/f0a7f2cd.search.png") no-repeat center left;
+}
+/* line 150, ../../app/styles/basic.scss */
+body > header input[type="submit"] {
+  color: #666;
+  padding: 0 0 0 0.5em;
+  margin: 2px 0 0 0;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  float: left;
+}
+/* line 163, ../../app/styles/basic.scss */
+body > header input[type="submit"]:hover {
+  color: #97c02f;
+}
+/* line 165, ../../app/styles/basic.scss */
+body > article {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 2%;
+  min-width: 220px;
+  max-width: 960px;
+  overflow: hidden;
+}
+/* line 173, ../../app/styles/basic.scss */
+body > article header {
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+/* line 176, ../../app/styles/basic.scss */
+body > article code {
+  display: block;
+  padding: 5px 0 5px 5px;
+}
+/* line 179, ../../app/styles/basic.scss */
+body > footer {
+  clear: both;
+  overflow: hidden;
+  padding: 0 0 20px 0;
+  margin: 1em auto 0 auto;
+  background: #ebebe2 url("../images/4ae321b2.clipping-footer.png") no-repeat right top;
+  border-top: 1px dashed #ccccb4;
+  border-bottom: 4px solid #ccccb4;
+}
+/* line 187, ../../app/styles/basic.scss */
+body > footer div {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 2%;
+  min-width: 220px;
+  max-width: 960px;
+}
+/* line 194, ../../app/styles/basic.scss */
+body > footer h3 {
+  margin: 0.8em 0 0 0;
+  padding: 0;
+  color: #676637;
+  margin-bottom: 5px;
+}
+/* line 199, ../../app/styles/basic.scss */
+body > footer p {
+  font-size: 0.9em;
+  color: #575756;
+}
+/* line 202, ../../app/styles/basic.scss */
+body > footer li {
+  font-size: 0.9em;
+  color: #575756;
+  list-style: none;
+  padding: 0;
+}
+/* line 205, ../../app/styles/basic.scss */
+body > footer li a {
+  font-size: 0.9em;
+  color: #575756;
+}
+/* line 210, ../../app/styles/basic.scss */
+body > footer p {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+/* line 215, ../../app/styles/basic.scss */
+body > footer section#elsewhere ul {
+  overflow: hidden;
+}
+/* line 217, ../../app/styles/basic.scss */
+body > footer section#elsewhere li {
+  width: 50%;
+  float: left;
+  width: 100%;
+  float: none;
+}
+/* line 222, ../../app/styles/basic.scss */
+body > footer section#elsewhere li a {
+  display: block;
+}
+/* line 225, ../../app/styles/basic.scss */
+body > footer section#contact span.email, body > footer section#contact span.tel, body > footer section#contact span.adr {
+  display: block;
+}
+
+/* line 228, ../../app/styles/basic.scss */
+article.detail header {
+  background-color: none;
+  border-top: 8px solid #000;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+/* content elements */
+/* line 236, ../../app/styles/basic.scss */
+aside {
+  margin: 0.5em 0;
+}
+/* line 239, ../../app/styles/basic.scss */
+aside.contents h4 {
+  font-size: 0.9em;
+  color: #252524;
+  border-bottom: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+/* line 248, ../../app/styles/basic.scss */
+aside.contents ul {
+  font-size: 0.8em;
+}
+/* line 250, ../../app/styles/basic.scss */
+aside.contents ul li {
+  list-style-type: none;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.8em;
+  border-bottom: 1px dotted #ababab;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 258, ../../app/styles/basic.scss */
+aside.contents ul li:first-child {
+  border-top: 1px dotted #ababab;
+}
+/* line 260, ../../app/styles/basic.scss */
+aside.contents ul li a {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+/* line 264, ../../app/styles/basic.scss */
+aside.contents ul li:hover {
+  background-color: white;
+}
+
+/* line 267, ../../app/styles/basic.scss */
+div.note {
+  margin: 0;
+}
+/* line 269, ../../app/styles/basic.scss */
+div.note p {
+  padding: 0.6em 0.8em 0.6em 0.6em;
+  color: white;
+  background: #97c02f url("../images/corner-green.png") no-repeat right top;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 274, ../../app/styles/basic.scss */
+div.note a {
+  color: white;
+  text-decoration: underline;
+}
+/* line 277, ../../app/styles/basic.scss */
+div.note.blue p {
+  background: #53a3b4 url("../images/b9c19da6.corner-blue.png") no-repeat right top;
+}
+/* line 279, ../../app/styles/basic.scss */
+div.note.red p {
+  background: #c93213 url("../images/345f697c.corner-red.png") no-repeat right top;
+}
+/* line 281, ../../app/styles/basic.scss */
+div.note.taupe p {
+  background: #999868 url("../images/corner-taupe.png") no-repeat right top;
+}
+
+/* components */
+/* line 286, ../../app/styles/basic.scss */
+article.alert {
+  background: #ebebe2;
+  width: 100%;
+  margin: 0.5em 0 1em 0;
+}
+/* line 290, ../../app/styles/basic.scss */
+article.alert p {
+  padding: 0.3em 0.6em 0.6em 0.6em;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+/* line 295, ../../app/styles/basic.scss */
+#biography {
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+  margin: 0 0 2px 0;
+}
+/* line 302, ../../app/styles/basic.scss */
+#biography img {
+  width: 40%;
+  height: auto;
+  max-width: 6em;
+  max-height: 6em;
+  padding: 0 0.5em 0.5em 0;
+  float: left;
+}
+/* line 309, ../../app/styles/basic.scss */
+#biography p {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+/* line 313, ../../app/styles/basic.scss */
+#breadcrumbs {
+  margin: 0 0 0.4em 0;
+  padding: 0;
+  width: 100%;
+  border-top: 1px solid #666;
+  border-bottom: 2px solid #666;
+}
+/* line 319, ../../app/styles/basic.scss */
+#breadcrumbs p {
+  color: #666;
+  margin: 2px 0;
+  padding: 4px 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  border-bottom: 1px solid #666;
+}
+/* line 326, ../../app/styles/basic.scss */
+#breadcrumbs a {
+  font-weight: 500;
+  margin: 0 0.2em 0 0;
+}
+/* line 329, ../../app/styles/basic.scss */
+#breadcrumbs a:hover {
+  color: #53a3b4;
+}
+
+/* line 332, ../../app/styles/basic.scss */
+.btt {
+  margin-top: 1em;
+}
+/* line 334, ../../app/styles/basic.scss */
+.btt a {
+  width: 100%;
+  display: block;
+}
+/* line 337, ../../app/styles/basic.scss */
+.btt a:hover {
+  background-color: white;
+}
+
+/* line 340, ../../app/styles/basic.scss */
+#pagination {
+  margin: 0;
+  padding: 0.3em 0px;
+  overflow: hidden;
+  width: 100%;
+  font-weight: 300;
+}
+/* line 346, ../../app/styles/basic.scss */
+#pagination ul {
+  width: 100%;
+  display: block;
+}
+/* line 349, ../../app/styles/basic.scss */
+#pagination li {
+  display: block;
+  float: right;
+  margin: 0 0.4em;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0;
+  list-style: none;
+}
+/* line 357, ../../app/styles/basic.scss */
+#pagination li.current {
+  color: #252524;
+}
+/* line 359, ../../app/styles/basic.scss */
+#pagination li a {
+  display: block;
+  width: 100%;
+  padding: 0;
+  background: none;
+}
+/* line 364, ../../app/styles/basic.scss */
+#pagination li a:hover {
+  background: none;
+}
+/* line 366, ../../app/styles/basic.scss */
+#pagination li.next {
+  margin: 0 0 0 0.7em;
+  background: none;
+}
+/* line 369, ../../app/styles/basic.scss */
+#pagination li.previous {
+  margin: 0;
+  background: none;
+}
+
+/* line 373, ../../app/styles/basic.scss */
+#related {
+  width: 100%;
+}
+/* line 375, ../../app/styles/basic.scss */
+#related h4 {
+  margin-top: 0;
+  padding: 0.3em 0;
+  border-top: 2px solid #666;
+  border-bottom: 1px solid #666;
+  color: #252524;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+/* line 384, ../../app/styles/basic.scss */
+#related nav ul {
+  margin-bottom: 0;
+  width: 100%;
+}
+/* line 387, ../../app/styles/basic.scss */
+#related nav li {
+  width: 100%;
+  border-top: 1px solid #666;
+  padding: 0.2em 0;
+  list-style: none;
+  margin: 0;
+}
+/* line 393, ../../app/styles/basic.scss */
+#related nav li:hover {
+  background-color: white;
+}
+/* line 395, ../../app/styles/basic.scss */
+#related nav li:first-child {
+  border: none;
+}
+/* line 397, ../../app/styles/basic.scss */
+#related nav li:last-child {
+  border-bottom: 1px solid #666;
+}
+/* line 400, ../../app/styles/basic.scss */
+#related nav a {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/* line 406, ../../app/styles/basic.scss */
+div#slideshow img {
+  margin: 0;
+}
+/* line 408, ../../app/styles/basic.scss */
+div#slideshow nav {
+  display: block;
+  width: 100%;
+}
+/* line 411, ../../app/styles/basic.scss */
+div#slideshow ul {
+  padding: 0;
+  margin: 0 0 0.8em 0;
+  display: block;
+  overflow: hidden;
+  background-color: #ebebe2;
+}
+/* line 417, ../../app/styles/basic.scss */
+div#slideshow ul li {
+  list-style-type: none;
+  display: block;
+  width: 33.3%;
+  padding: 0;
+  margin: 0;
+}
+/* line 423, ../../app/styles/basic.scss */
+div#slideshow ul li a:hover {
+  cursor: hand;
+}
+/* line 425, ../../app/styles/basic.scss */
+div#slideshow ul li.previous {
+  float: left;
+}
+/* line 427, ../../app/styles/basic.scss */
+div#slideshow ul li.current {
+  text-align: center;
+  float: left;
+  font-size: 0.9em;
+}
+/* line 431, ../../app/styles/basic.scss */
+div#slideshow ul li.next {
+  text-align: right;
+  float: right;
+}
+
+/* elements */
+/* line 438, ../../app/styles/basic.scss */
+#elsewhere ul li {
+  padding: 0.2em 0;
+  margin: 0;
+}
+/* line 442, ../../app/styles/basic.scss */
+#elsewhere li a {
+  padding: 0 0 0 2em;
+}
+/* line 444, ../../app/styles/basic.scss */
+#elsewhere li:hover {
+  color: #333;
+  background-color: white;
+}
