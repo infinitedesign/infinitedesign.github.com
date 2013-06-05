@@ -1,0 +1,50 @@
+CACHE MANIFEST
+
+# Time: Wed Jun 05 2013 16:02:29 GMT-0400 (EDT)
+# This manifest was created by confess.js, http://github.com/jamesgpearce/confess
+#
+# Retrieved URL: http://localhost:3501/
+# User-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#
+# Config:
+#  task: appcache
+#  userAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#  wait: 0
+#  consolePrefix: #
+#  verbose: true
+#  appcache:
+#   urlsFromDocument: true
+#   urlsFromRequests: false
+#   cacheFilter: .*
+#   networkFilter: null
+#  url: http://localhost:3501
+#  configFile: /Users/Thomas/yeoman/cli/lib/support/confess.json
+
+CACHE:
+http://localhost:3501/images/125467b4.slideshare.png
+http://localhost:3501/images/345f697c.corner-red.png
+http://localhost:3501/images/425334f3.tumblr.png
+http://localhost:3501/images/4341a7f3.delicious.png
+http://localhost:3501/images/4ae321b2.clipping-footer.png
+http://localhost:3501/images/522e3425.earthtree-m2.jpg
+http://localhost:3501/images/6629f0ad.logo-m.png
+http://localhost:3501/images/7e78eb45.github.png
+http://localhost:3501/images/a678c66d.twitter.png
+http://localhost:3501/images/a8102e68.earthtree-d.jpg
+http://localhost:3501/images/b9c19da6.corner-blue.png
+http://localhost:3501/images/clipping.png
+http://localhost:3501/images/corner-green.png
+http://localhost:3501/images/corner-taupe.png
+http://localhost:3501/images/f0a7f2cd.search.png
+http://localhost:3501/img/a-rss.png
+http://localhost:3501/styles/arrow.png
+images/ff9a6b11.mobile-traffic.jpg
+scripts/plugins.js
+scripts/vendor/jquery.min.js
+scripts/vendor/modernizr.min.js
+styles/basic.css
+styles/desktop.css
+styles/mobile.css
+
+NETWORK:
+*

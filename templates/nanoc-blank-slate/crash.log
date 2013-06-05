@@ -1,0 +1,334 @@
+Crashlog created at 2013-06-05 13:23:41 -0400
+
+===== MESSAGE:
+
+TypeError: can't convert Symbol into Integer
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. layout /header/:7:in `[]'
+  1. layout /header/:7:in `get_binding'
+  2. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/1.9.1/erb.rb:838:in `eval'
+  3. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/1.9.1/erb.rb:838:in `result'
+  4. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/filters/erb.rb:34:in `run'
+  5. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  6. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/helpers/rendering.rb:120:in `render'
+  7. layout /default/:3:in `get_binding'
+  8. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/1.9.1/erb.rb:838:in `eval'
+  9. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/1.9.1/erb.rb:838:in `result'
+  10. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/filters/erb.rb:34:in `run'
+  11. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  12. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/result_data/item_rep.rb:409:in `layout'
+  13. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/item_rep_proxy.rb:69:in `layout'
+  14. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule_context.rb:68:in `layout'
+  15. ./Rules:27:in `block in load'
+  16. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  17. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  18. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:384:in `compile_rep'
+  19. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:340:in `block in compile_reps'
+  20. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `loop'
+  21. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `compile_reps'
+  22. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  23. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  24. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:65:in `block in recompile'
+  25. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `chdir'
+  26. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `recompile'
+  27. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:28:in `run_on_changes'
+  28. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:99:in `block in run_supervised_task'
+  29. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:97:in `catch'
+  30. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:97:in `run_supervised_task'
+  31. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:144:in `block in run_first_task_found'
+  32. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:142:in `each'
+  33. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:142:in `run_first_task_found'
+  34. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:79:in `block in run_on_changes'
+  35. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:175:in `block (3 levels) in scoped_guards'
+  36. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:173:in `each'
+  37. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:173:in `block (2 levels) in scoped_guards'
+  38. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:172:in `catch'
+  39. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:172:in `block in scoped_guards'
+  40. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:170:in `each'
+  41. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:170:in `scoped_guards'
+  42. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard/runner.rb:72:in `run_on_changes'
+  43. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard.rb:105:in `block (2 levels) in setup_listener'
+  44. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard.rb:368:in `block in within_preserved_state'
+  45. <internal:prelude>:10:in `synchronize'
+  46. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard.rb:365:in `within_preserved_state'
+  47. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib/guard.rb:104:in `block in setup_listener'
+  48. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/listen-1.1.1/lib/listen/listener.rb:234:in `call'
+  49. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/listen-1.1.1/lib/listen/listener.rb:234:in `on_change'
+  50. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/listen-1.1.1/lib/listen/listener.rb:266:in `block in initialize_adapter'
+  51. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/listen-1.1.1/lib/listen/adapter.rb:242:in `call'
+  52. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/listen-1.1.1/lib/listen/adapter.rb:242:in `report_changes'
+  53. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/listen-1.1.1/lib/listen/adapter.rb:311:in `poll_changed_directories'
+  ... 56 more lines omitted. See full crash log for details.
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.4 © 2007-2013 Denis Defreyne.
+Running ruby 1.9.3 (2012-11-10) on x86_64-darwin11.4.2 with RubyGems 2.0.3.
+
+===== SYSTEM INFORMATION:
+
+Darwin new-host-2.home 11.4.2 Darwin Kernel Version 11.4.2: Thu Aug 23 16:25:48 PDT 2012; root:xnu-1699.32.7~1/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  POpen4 0.1.4
+  Platform 0.4.0
+  actionmailer 2.3.17, 3.2.9, 3.2.11, 3.2.13
+  actionpack 2.3.17, 3.2.9, 3.2.11, 3.2.13, 4.0.0.rc1
+  activemodel 3.2.9, 3.2.11, 3.2.13
+  activerecord 2.3.17, 3.2.9, 3.2.11, 3.2.13
+  activeresource 2.3.17, 3.2.9, 3.2.11, 3.2.13
+  activesupport 2.3.17, 3.2.9, 3.2.11, 3.2.13, 4.0.0.rc1
+  addressable 2.3.3, 2.3.4
+  adobe_connect 0.0.8, 1.0.0
+  adsf 1.1.1
+  albino 1.3.3
+  arel 3.0.2, 4.0.0
+  atomic 1.1.9
+  authlogic 2.1.3, 3.3.0
+  aws-s3-instructure 0.6.2.1352914936
+  barby 0.5.0, 0.5.1
+  bcrypt-ruby 3.0.1
+  bigdecimal 1.1.0
+  bluecloth 2.0.10, 2.2.0
+  bootstrap-sass 2.0.3.1, 2.3.1.0
+  builder 2.1.2, 3.0.4, 3.1.4, 3.2.0
+  bundler 1.2.2, 1.2.3, 1.3.5
+  canvas_connect 0.0.8, 0.1.0
+  cassandra-cql 1.1.1, 1.1.5
+  certified 0.1.1
+  childprocess 0.3.9
+  chunky_png 1.2.6, 1.2.7, 1.2.8
+  classifier 1.3.3
+  closure-compiler 1.1.8
+  coderay 1.0.9
+  coffee-rails 3.2.2, 4.0.0
+  coffee-script 2.2.0
+  coffee-script-source 1.4.0, 1.6.2
+  colorator 0.1
+  colored 1.2
+  columnize 0.3.6
+  commander 4.1.3
+  commonjs 0.2.6
+  compass 0.12.2
+  compass-rails 1.0.2, 1.0.3
+  crack 0.3.2
+  cri 2.3.0
+  crocodoc-ruby 0.0.1
+  cssmin 1.0.3
+  daemons 1.1.0, 1.1.9
+  debugger 1.1.3, 1.4.0, 1.5.0, 1.6.0
+  debugger-linecache 1.1.2, 1.2.0
+  debugger-ruby_core_source 1.1.9, 1.2.0, 1.2.1
+  diff-lcs 1.1.2, 1.1.3, 1.2.4
+  directory_watcher 1.4.1, 1.5.1
+  em-websocket 0.5.0
+  embedly 1.5.5, 1.6.0
+  encrypted_cookie_store-instructure 1.0.2, 1.0.4
+  erubis 2.7.0
+  ethon 0.5.12
+  eventmachine 1.0.0, 1.0.3
+  execjs 1.4.0
+  fast-stemmer 1.0.1, 1.0.2
+  ffi 1.1.5, 1.8.1
+  foreigner 0.9.2, 1.4.1
+  formatador 0.2.4
+  fssm 0.2.9, 0.2.10
+  git 1.2.5
+  guard 1.6.0, 1.8.0
+  guard-livereload 1.4.0
+  guard-nanoc 1.0.1
+  hairtrigger 0.1.14, 0.2.3
+  happymapper 0.4.0
+  hashery 1.3.0, 2.1.0
+  highline 1.6.1, 1.6.19
+  hike 1.2.1, 1.2.2
+  hoe 3.5.1, 3.6.1
+  http_parser.rb 0.5.3
+  httparty 0.10.0, 0.11.0
+  i18n 0.6.0, 0.6.1, 0.6.4
+  icalendar 1.1.5, 1.3.0
+  instructure-redis-store 1.0.0.2.instructure1
+  io-console 0.3, 0.4.2
+  jammit 0.6.0, 0.6.6
+  jekyll 0.11.2, 0.12.0, 1.0.2
+  journey 1.0.4
+  jquery-rails 2.1.3, 2.1.4, 2.2.1
+  jsmin 1.0.1
+  json 1.5.4, 1.5.5, 1.7.5, 1.7.6, 1.8.0
+  jwt 0.1.5, 0.1.8
+  kramdown 0.13.8, 0.14.0, 0.14.1, 1.0.2
+  less 2.2.2, 2.3.2
+  less-rails 2.2.6, 2.3.3
+  libv8 3.11.8.13, 3.16.14.1
+  libwebsocket 0.1.7.1, 0.1.8
+  libxml-ruby 2.3.2, 2.6.0
+  liquid 2.4.1, 2.5.0
+  listen 0.7.3, 1.1.1
+  lumberjack 1.0.2, 1.0.3
+  macaddr 1.0.0, 1.6.1
+  mail 2.4.4, 2.5.2, 2.5.3, 2.5.4
+  maildir 2.1.0
+  mailman 0.5.3, 0.6.0
+  maruku 0.6.1
+  metaclass 0.0.1
+  method_source 0.8.1
+  mime-types 1.17.2, 1.19, 1.23
+  mini_magick 1.3.2, 3.5.0
+  minitest 2.5.1, 4.3.0, 4.3.2, 4.4.0, 5.0.1
+  mocha 0.12.3, 0.14.0
+  moodle2cc 0.1.6
+  multi_json 1.3.7, 1.4.0, 1.5.0, 1.6.1, 1.7.3
+  multi_xml 0.5.2, 0.5.3
+  nanoc 3.4.2, 3.4.3, 3.6.3, 3.6.4
+  nokogiri 1.5.5, 1.5.9
+  oauth 0.4.5, 0.4.7
+  open4 1.3.0
+  pg 0.14.1, 0.15.1
+  polyglot 0.3.3
+  posix-spawn 0.3.6
+  pry 0.9.12, 0.9.12.2
+  pygments.rb 0.3.7, 0.5.0
+  querystring 0.1.0
+  rack 1.1.3, 1.4.1, 1.4.4, 1.4.5, 1.5.2
+  rack-cache 1.2
+  rack-protection 1.3.2, 1.5.0
+  rack-ssl 1.3.2, 1.3.3
+  rack-test 0.6.2
+  rails 3.2.9, 3.2.11, 3.2.13
+  railties 3.2.9, 3.2.11, 3.2.13, 4.0.0.rc1
+  rake 0.9.2.2, 0.9.6, 10.0.1, 10.0.2, 10.0.3, 10.0.4
+  rb-fsevent 0.9.3
+  rb-inotify 0.9.0
+  rb-kqueue 0.2.0
+  rbx-require-relative 0.0.9
+  rdiscount 1.6.8, 2.0.7.3
+  rdoc 3.9.4, 3.12, 4.0.1
+  redis 3.0.1, 3.0.4
+  ref 1.0.2, 1.0.4
+  rest-client 1.6.7
+  rspec 2.12.0, 2.13.0
+  rspec-core 2.12.0, 2.12.1, 2.12.2, 2.13.1
+  rspec-expectations 2.12.0, 2.12.1, 2.13.0
+  rspec-mocks 2.12.0, 2.12.1, 2.13.1
+  ruby2ruby 1.2.5, 2.0.5
+  ruby_parser 2.0.6, 3.1.3
+  rubygems-update 1.8.24, 2.0.3
+  rubypants 0.2.0
+  rubyzip 0.9.5, 0.9.9
+  safe_yaml 0.7.1, 0.9.1
+  sass 3.2.1, 3.2.3, 3.2.5, 3.2.9
+  sass-rails 3.2.5, 3.2.6
+  sexp_processor 3.0.5, 4.2.1
+  simple_uuid 0.3.0
+  sinatra 1.1.0, 1.3.3, 1.4.2
+  slop 3.4.3, 3.4.5
+  sms-rb 0.0.1
+  sprockets 2.2.1, 2.2.2, 2.8.1, 2.8.2, 2.9.3
+  sqlite3 1.3.6, 1.3.7
+  subexec 0.0.4, 0.2.3
+  syntax 1.0.0
+  systemu 2.5.2
+  therubyracer 0.11.3, 0.11.4
+  thin 1.5.0, 1.5.1
+  thor 0.16.0, 0.17.0, 0.18.1
+  thread_safe 0.1.0
+  thrift 0.8.0, 0.9.0
+  thrift_client 0.8.4, 0.9.1, 0.9.2
+  tilt 1.3.3, 1.4.1
+  treetop 1.4.12
+  twilio 3.1.1
+  twilio-rb 2.2.0, 2.2.2
+  twilio-ruby 3.9.0
+  twitter-bootstrap-rails 2.2.0, 2.2.6
+  typhoeus 0.3.3, 0.6.3
+  tzinfo 0.3.35, 0.3.37
+  uglifier 1.3.0, 2.1.0
+  websocket 1.0.7
+  xml-simple 1.0.12, 1.1.2
+  yajl-ruby 1.1.0
+  yui-compressor 0.9.4, 0.9.6
+
+===== ENVIRONMENT:
+
+AUTOFEATURE => "true"
+Apple_PubSub_Socket_Render => "/tmp/launch-Ku1buF/Render"
+Apple_Ubiquity_Message => "/tmp/launch-KNr9kI/Apple_Ubiquity_Message"
+BASH_IT => "/Users/Thomas/.bash_it"
+BASH_IT_THEME => "bobby"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-A571ef/org.x:0"
+EDITOR => "subl -w"
+FAB_COMPLETION_CACHED_TASKS_FILENAME => ".fab_tasks~"
+FAB_COMPLETION_CACHE_TASKS => "true"
+GIT_EDITOR => "subl -w"
+GIT_HOSTING => "git@git.domain.com"
+GREP_COLOR => "1;33"
+GREP_OPTIONS => "--color=auto"
+GUARD_NOTIFICATIONS => "---\n- :name: :terminal_title\n  :options: {}\n"
+GUARD_NOTIFY => "true"
+HISTCONTROL => "erasedups"
+HISTSIZE => "5000"
+HOME => "/Users/Thomas"
+IRC_CLIENT => "irssi"
+LANG => "en_US.UTF-8"
+LOGNAME => "Thomas"
+LSCOLORS => "Gxfxcxdxdxegedabagacad"
+MANPATH => "/Users/Thomas/.nvm/v0.8.16/share/man:"
+NVM_BIN => "/Users/Thomas/.nvm/v0.8.16/bin"
+NVM_DIR => "/Users/Thomas/.nvm"
+NVM_PATH => "/Users/Thomas/.nvm/v0.8.16/lib/node"
+PATH => "/Users/Thomas/.rbenv/versions/1.9.3-p327/bin:/usr/local/Cellar/rbenv/0.4.0/libexec:/Users/Thomas/.rbenv/shims:/Users/Thomas/.rbenv/bin:/Users/Thomas/.nvm/v0.8.16/bin:./node_modules/.bin:/Users/Thomas/.rbenv/shims:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/Thomas/.bash_it/plugins/available/todo"
+PWD => "/Users/Thomas/Workspace/template-sites/infinitedesign.github.com/app/templates/nanoc-blank-slate"
+RBENV_DIR => "/Users/Thomas/Workspace/template-sites/infinitedesign.github.com/app/templates/nanoc-blank-slate"
+RBENV_HOOK_PATH => ":/Users/Thomas/.rbenv/rbenv.d:/usr/local/etc/rbenv.d:/etc/rbenv.d:/usr/lib/rbenv/hooks"
+RBENV_ROOT => "/Users/Thomas/.rbenv"
+RBENV_VERSION => "1.9.3-p327"
+SECURITYSESSIONID => "186a4"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-CPBlYB/Listeners"
+TERM => "xterm-256color"
+TERM_PROGRAM => "Apple_Terminal"
+TERM_PROGRAM_VERSION => "303.2"
+TERM_SESSION_ID => "5C767EDA-A2B6-48B6-B30A-060E2E0C39F8"
+TMPDIR => "/var/folders/49/k12j27rs13jgx7xd5bkstx_h0000gn/T/"
+TODO => "t"
+TODOTXT_DEFAULT_ACTION => "ls"
+TODO_DIR => "/Users/Thomas/.bash_it/custom"
+TODO_SRC_DIR => "/Users/Thomas/.bash_it/plugins/available/todo"
+USER => "Thomas"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:0"
+
+===== LOAD PATHS:
+
+  0. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/rb-fsevent-0.9.3/lib
+  1. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/rb-inotify-0.9.0/lib
+  2. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/rb-kqueue-0.2.0/lib
+  3. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/listen-1.1.1/lib
+  4. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/formatador-0.2.4/lib
+  5. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-1.8.0/lib
+  6. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/coderay-1.0.9/lib
+  7. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/method_source-0.8.1/lib
+  8. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/pry-0.9.12.2/lib
+  9. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/slop-3.4.5/lib
+  10. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/lumberjack-1.0.3/lib
+  11. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/thor-0.18.1/lib
+  12. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/guard-nanoc-1.0.1/lib
+  13. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/colored-1.2/lib
+  14. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/cri-2.3.0/lib
+  15. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/nanoc-3.6.4/lib
+  16. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/site_ruby/1.9.1
+  17. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/site_ruby/1.9.1/x86_64-darwin11.4.2
+  18. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/site_ruby
+  19. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/vendor_ruby/1.9.1
+  20. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/vendor_ruby/1.9.1/x86_64-darwin11.4.2
+  21. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/vendor_ruby
+  22. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/1.9.1
+  23. /Users/Thomas/.rbenv/versions/1.9.3-p327/lib/ruby/1.9.1/x86_64-darwin11.4.2
